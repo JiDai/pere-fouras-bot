@@ -221,6 +221,7 @@ export interface paths {
           created_at?: parameters["rowFilter.counter.created_at"];
           name?: parameters["rowFilter.counter.name"];
           count?: parameters["rowFilter.counter.count"];
+          active?: parameters["rowFilter.counter.active"];
           /** Filtering Columns */
           select?: parameters["select"];
           /** Ordering */
@@ -275,6 +276,7 @@ export interface paths {
           created_at?: parameters["rowFilter.counter.created_at"];
           name?: parameters["rowFilter.counter.name"];
           count?: parameters["rowFilter.counter.count"];
+          active?: parameters["rowFilter.counter.active"];
         };
         header: {
           /** Preference */
@@ -293,6 +295,7 @@ export interface paths {
           created_at?: parameters["rowFilter.counter.created_at"];
           name?: parameters["rowFilter.counter.name"];
           count?: parameters["rowFilter.counter.count"];
+          active?: parameters["rowFilter.counter.active"];
         };
         body: {
           /** counter */
@@ -829,6 +832,8 @@ export interface paths {
           hour?: parameters["rowFilter.planning.hour"];
           title?: parameters["rowFilter.planning.title"];
           active?: parameters["rowFilter.planning.active"];
+          picture_url?: parameters["rowFilter.planning.picture_url"];
+          game_id?: parameters["rowFilter.planning.game_id"];
           /** Filtering Columns */
           select?: parameters["select"];
           /** Ordering */
@@ -885,6 +890,8 @@ export interface paths {
           hour?: parameters["rowFilter.planning.hour"];
           title?: parameters["rowFilter.planning.title"];
           active?: parameters["rowFilter.planning.active"];
+          picture_url?: parameters["rowFilter.planning.picture_url"];
+          game_id?: parameters["rowFilter.planning.game_id"];
         };
         header: {
           /** Preference */
@@ -905,6 +912,8 @@ export interface paths {
           hour?: parameters["rowFilter.planning.hour"];
           title?: parameters["rowFilter.planning.title"];
           active?: parameters["rowFilter.planning.active"];
+          picture_url?: parameters["rowFilter.planning.picture_url"];
+          game_id?: parameters["rowFilter.planning.game_id"];
         };
         body: {
           /** planning */
@@ -1134,6 +1143,108 @@ export interface paths {
       };
     };
   };
+  "/pf_answer": {
+    get: {
+      parameters: {
+        query: {
+          id?: parameters["rowFilter.pf_answer.id"];
+          created_at?: parameters["rowFilter.pf_answer.created_at"];
+          question_id?: parameters["rowFilter.pf_answer.question_id"];
+          username?: parameters["rowFilter.pf_answer.username"];
+          answer?: parameters["rowFilter.pf_answer.answer"];
+          valid?: parameters["rowFilter.pf_answer.valid"];
+          /** Filtering Columns */
+          select?: parameters["select"];
+          /** Ordering */
+          order?: parameters["order"];
+          /** Limiting and Pagination */
+          offset?: parameters["offset"];
+          /** Limiting and Pagination */
+          limit?: parameters["limit"];
+        };
+        header: {
+          /** Limiting and Pagination */
+          Range?: parameters["range"];
+          /** Limiting and Pagination */
+          "Range-Unit"?: parameters["rangeUnit"];
+          /** Preference */
+          Prefer?: parameters["preferCount"];
+        };
+      };
+      responses: {
+        /** OK */
+        200: {
+          schema: definitions["pf_answer"][];
+        };
+        /** Partial Content */
+        206: unknown;
+      };
+    };
+    post: {
+      parameters: {
+        body: {
+          /** pf_answer */
+          pf_answer?: definitions["pf_answer"];
+        };
+        query: {
+          /** Filtering Columns */
+          select?: parameters["select"];
+        };
+        header: {
+          /** Preference */
+          Prefer?: parameters["preferReturn"];
+        };
+      };
+      responses: {
+        /** Created */
+        201: unknown;
+      };
+    };
+    delete: {
+      parameters: {
+        query: {
+          id?: parameters["rowFilter.pf_answer.id"];
+          created_at?: parameters["rowFilter.pf_answer.created_at"];
+          question_id?: parameters["rowFilter.pf_answer.question_id"];
+          username?: parameters["rowFilter.pf_answer.username"];
+          answer?: parameters["rowFilter.pf_answer.answer"];
+          valid?: parameters["rowFilter.pf_answer.valid"];
+        };
+        header: {
+          /** Preference */
+          Prefer?: parameters["preferReturn"];
+        };
+      };
+      responses: {
+        /** No Content */
+        204: never;
+      };
+    };
+    patch: {
+      parameters: {
+        query: {
+          id?: parameters["rowFilter.pf_answer.id"];
+          created_at?: parameters["rowFilter.pf_answer.created_at"];
+          question_id?: parameters["rowFilter.pf_answer.question_id"];
+          username?: parameters["rowFilter.pf_answer.username"];
+          answer?: parameters["rowFilter.pf_answer.answer"];
+          valid?: parameters["rowFilter.pf_answer.valid"];
+        };
+        body: {
+          /** pf_answer */
+          pf_answer?: definitions["pf_answer"];
+        };
+        header: {
+          /** Preference */
+          Prefer?: parameters["preferReturn"];
+        };
+      };
+      responses: {
+        /** No Content */
+        204: never;
+      };
+    };
+  };
   "/rpc/poll_result_rpc": {
     post: {
       parameters: {
@@ -1246,6 +1357,11 @@ export interface definitions {
      * @default 0
      */
     count?: number;
+    /**
+     * Format: boolean
+     * @default false
+     */
+    active?: boolean;
   };
   poll_vote: {
     /**
@@ -1409,6 +1525,14 @@ export interface definitions {
      * @default true
      */
     active: boolean;
+    /** Format: character varying */
+    picture_url?: string;
+    /**
+     * Format: bigint
+     * @description Note:
+     * This is a Foreign Key to `game.id`.<fk table='game' column='id'/>
+     */
+    game_id?: number;
   };
   command_label: {
     /**
@@ -1468,6 +1592,30 @@ export interface definitions {
      * @enum {string}
      */
     status: "todo" | "playing" | "finished";
+  };
+  pf_answer: {
+    /**
+     * Format: bigint
+     * @description Note:
+     * This is a Primary Key.<pk/>
+     */
+    id: number;
+    /**
+     * Format: timestamp with time zone
+     * @default now()
+     */
+    created_at?: string;
+    /** Format: uuid */
+    question_id?: string;
+    /** Format: text */
+    username?: string;
+    /** Format: text */
+    answer?: string;
+    /**
+     * Format: boolean
+     * @default false
+     */
+    valid: boolean;
   };
 }
 
@@ -1540,6 +1688,8 @@ export interface parameters {
   "rowFilter.counter.name": string;
   /** Format: integer */
   "rowFilter.counter.count": string;
+  /** Format: boolean */
+  "rowFilter.counter.active": string;
   /** @description poll_vote */
   "body.poll_vote": definitions["poll_vote"];
   /** Format: bigint */
@@ -1626,6 +1776,10 @@ export interface parameters {
   "rowFilter.planning.title": string;
   /** Format: boolean */
   "rowFilter.planning.active": string;
+  /** Format: character varying */
+  "rowFilter.planning.picture_url": string;
+  /** Format: bigint */
+  "rowFilter.planning.game_id": string;
   /** @description command_label */
   "body.command_label": definitions["command_label"];
   /** Format: bigint */
@@ -1660,6 +1814,20 @@ export interface parameters {
   "rowFilter.game.twitch_id": string;
   /** Format: public.game_status */
   "rowFilter.game.status": string;
+  /** @description pf_answer */
+  "body.pf_answer": definitions["pf_answer"];
+  /** Format: bigint */
+  "rowFilter.pf_answer.id": string;
+  /** Format: timestamp with time zone */
+  "rowFilter.pf_answer.created_at": string;
+  /** Format: uuid */
+  "rowFilter.pf_answer.question_id": string;
+  /** Format: text */
+  "rowFilter.pf_answer.username": string;
+  /** Format: text */
+  "rowFilter.pf_answer.answer": string;
+  /** Format: boolean */
+  "rowFilter.pf_answer.valid": string;
 }
 
 export interface operations {}

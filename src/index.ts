@@ -2,10 +2,15 @@ import {config} from 'dotenv';
 import {Client as TMIClient} from 'tmi';
 
 import {SupabaseClient} from 'supabase';
+import {getMessageCommand} from "./helpers/chat.ts";
+import AnswerRepository from "./repositories/AnswerRepository.ts";
+import riddles from "./data/riddles.json" assert {type: "json"};
+import {Question} from "./types/Question.ts";
 
 const env = config();
 
 let twitchClient: TMIClient;
+const QUESTION_TIMEOUT = 30000;
 
 async function handleTwitchChat() {
 	twitchClient = new TMIClient({
@@ -35,21 +40,48 @@ async function handleTwitchChat() {
 		detectSessionInUrl: false,
 	});
 
+	twitchClient.say(env.CHANNEL_NAME, 'Bonjour jeunes gens');
 
-	twitchClient.on('chat', function chatHandler() {
-		twitchClient.say(env.CHANNEL_NAME, 'Bonjour jeunes gens');
+	let currentQuestion: Question | null = null;
+	let questionTimeout: number;
+
+	twitchClient.on('chat', async function chatHandler(
+		channel: string,
+		{username, 'message-type': messageType}: { username: string; 'message-type': string },
+		message: string,
+	) {
 		// Create DB
+		const command = getMessageCommand(message);
 
-		// Respond to !pf ask
-		//   - open question
-		//   - tell the timers
-		//   - verify current question already
+		if (!command || command?.name !== 'pf') {
+			return;
+		}
 
-		// Respond to !pf <answer>
-		//   - Save answer
-		//   - Detect winner and Say it
-		//   - close question
 
+		if (command.message === 'ask' && currentQuestion === null) {
+			const index = Math.floor(Math.random() * riddles.length);
+			currentQuestion = riddles[index];
+			for (const line of currentQuestion.question) {
+				twitchClient.say(env.CHANNEL_NAME, line);
+			}
+			twitchClient.say(env.CHANNEL_NAME, `=> Tapez !pf suivez de votre mot pour répondre. Fin dans ${QUESTION_TIMEOUT / 1000}s !`);
+			questionTimeout = setTimeout(function questionEnd() {
+				currentQuestion = null;
+				twitchClient.say(env.CHANNEL_NAME, 'Personne n\'a trouvé dans le temps imparti...');
+			}, QUESTION_TIMEOUT);
+		} else if (command.message !== '' && currentQuestion !== null) {
+			let valid = false;
+			if (command.message.toLowerCase().trim() === currentQuestion.answer.toLowerCase().trim()) {
+				valid = true;
+				twitchClient.say(env.CHANNEL_NAME, `GG @${username} !!`);
+				clearTimeout(questionTimeout);
+			}
+			const repo = new AnswerRepository(supabase);
+			const isOk = await repo.post(command.message, username, valid, currentQuestion.id);
+			if (!isOk) {
+				throw new Error('Unable to insert answer');
+			}
+		}
 	});
 
 	return twitchClient;
