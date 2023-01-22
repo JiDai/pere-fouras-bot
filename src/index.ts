@@ -4,7 +4,6 @@ import {Client as TMIClient} from 'tmi';
 import {SupabaseClient} from 'supabase';
 import {getMessageCommand} from "./helpers/chat.ts";
 import AnswerRepository from "./repositories/AnswerRepository.ts";
-import riddles from "./data/riddles.json" assert {type: "json"};
 import {Question} from "./types/Question.ts";
 
 const env = config();
@@ -57,10 +56,11 @@ async function handleTwitchChat() {
 			return;
 		}
 
+		const repo = new AnswerRepository(supabase);
+
 		// Ask a question
 		if (command.message === 'ask' && currentQuestion === null) {
-			const index = Math.floor(Math.random() * riddles.length);
-			currentQuestion = riddles[index];
+			currentQuestion = await repo.getCurrent()
 			for (const line of currentQuestion.question) {
 				twitchClient.say(env.CHANNEL_NAME, line);
 			}
@@ -72,8 +72,6 @@ async function handleTwitchChat() {
 		}
 		// An answer has been post
 		else if (command.message !== '' && currentQuestion !== null) {
-			const repo = new AnswerRepository(supabase);
-
 			// Success
 			if (command.message.toLowerCase().trim() === currentQuestion.answer.toLowerCase().trim()) {
 				twitchClient.say(env.CHANNEL_NAME, `GG @${username} !!`);
@@ -91,6 +89,18 @@ async function handleTwitchChat() {
 					throw new Error('Unable to insert answer');
 				}
 			}
+		}
+		// Board of players
+		else if (command.message === 'board') {
+			const board = await repo.getBoard();
+			if (!board) {
+				throw new Error('Unable to insert answer');
+			}
+
+			const message = Object.entries(board).map(function (item, index) {
+				return `${index+1}. ${item[0]}: ${item[1]}pts`
+			}).join(' -- ')
+			twitchClient.say(env.CHANNEL_NAME, message);
 		}
 	});
 
