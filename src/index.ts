@@ -9,7 +9,8 @@ import {Question} from "./types/Question.ts";
 const env = config();
 
 let twitchClient: TMIClient;
-const QUESTION_TIMEOUT = 30000;
+const QUESTION_TIMEOUT = 60000;
+const RIDDLE_LINE_INTERVAL_TIMEOUT = 3000;
 
 async function handleTwitchChat() {
 	twitchClient = new TMIClient({
@@ -60,11 +61,18 @@ async function handleTwitchChat() {
 
 		// Ask a question
 		if (command.message === 'ask' && currentQuestion === null) {
-			currentQuestion = await repo.getCurrent()
-			for (const line of currentQuestion.question) {
-				twitchClient.say(env.CHANNEL_NAME, line);
+			currentQuestion = await repo.getCurrent();
+			for (const index in currentQuestion.question) {
+				const line = currentQuestion.question[index];
+				setTimeout(function questionLineMessage() {
+					twitchClient.say(env.CHANNEL_NAME, line);
+				}, Number(index) * RIDDLE_LINE_INTERVAL_TIMEOUT);
 			}
-			twitchClient.say(env.CHANNEL_NAME, `=> Tapez !pf suivez de votre mot pour répondre. Fin dans ${QUESTION_TIMEOUT / 1000}s !`);
+
+			setTimeout(function questionTip() {
+				twitchClient.say(env.CHANNEL_NAME, `=> Tapez !pf suivez de votre mot pour répondre. Fin dans ${QUESTION_TIMEOUT / 1000}s !`);
+			}, currentQuestion.question.length * RIDDLE_LINE_INTERVAL_TIMEOUT)
+
 			questionTimeout = setTimeout(function questionEnd() {
 				currentQuestion = null;
 				twitchClient.say(env.CHANNEL_NAME, 'Personne n\'a trouvé dans le temps imparti...');
@@ -98,8 +106,8 @@ async function handleTwitchChat() {
 			}
 
 			const message = Object.entries(board).map(function (item, index) {
-				return `${index+1}. ${item[0]}: ${item[1]}pts`
-			}).join(' -- ')
+				return `${index + 1}. ${item[0]}: ${item[1]}pts`;
+			}).join(' -- ');
 			twitchClient.say(env.CHANNEL_NAME, message);
 		}
 	});
