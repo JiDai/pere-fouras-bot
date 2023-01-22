@@ -23,8 +23,8 @@ async function handleTwitchChat() {
 		},
 		options: {debug: true},
 		identity: {
-			username: env.BROADCASTER_USERNAME,
-			password: env.BROADCASTER_OAUTH_TOKEN,
+			username: env.BOT_USERNAME,
+			password: env.BOT_OAUTH_TOKEN,
 		},
 		channels: [env.CHANNEL_NAME],
 	});
@@ -57,7 +57,7 @@ async function handleTwitchChat() {
 			return;
 		}
 
-
+		// Ask a question
 		if (command.message === 'ask' && currentQuestion === null) {
 			const index = Math.floor(Math.random() * riddles.length);
 			currentQuestion = riddles[index];
@@ -69,17 +69,27 @@ async function handleTwitchChat() {
 				currentQuestion = null;
 				twitchClient.say(env.CHANNEL_NAME, 'Personne n\'a trouvé dans le temps imparti...');
 			}, QUESTION_TIMEOUT);
-		} else if (command.message !== '' && currentQuestion !== null) {
-			let valid = false;
+		}
+		// An answer has been post
+		else if (command.message !== '' && currentQuestion !== null) {
+			const repo = new AnswerRepository(supabase);
+
+			// Success
 			if (command.message.toLowerCase().trim() === currentQuestion.answer.toLowerCase().trim()) {
-				valid = true;
 				twitchClient.say(env.CHANNEL_NAME, `GG @${username} !!`);
 				clearTimeout(questionTimeout);
+				const isOk = await repo.post(command.message, username, true, currentQuestion.id);
+				currentQuestion = null;
+				if (!isOk) {
+					throw new Error('Unable to insert answer');
+				}
 			}
-			const repo = new AnswerRepository(supabase);
-			const isOk = await repo.post(command.message, username, valid, currentQuestion.id);
-			if (!isOk) {
-				throw new Error('Unable to insert answer');
+			// Wrong
+			else {
+				const isOk = await repo.post(command.message, username, false, currentQuestion.id);
+				if (!isOk) {
+					throw new Error('Unable to insert answer');
+				}
 			}
 		}
 	});
