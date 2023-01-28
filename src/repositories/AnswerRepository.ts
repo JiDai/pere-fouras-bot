@@ -7,13 +7,13 @@ import riddles from "../data/riddles.json" assert {type: "json"};
 type BaseAnswerEntity = definitions['pf_answer'];
 type RiddleEntity = {
 	"id": string,
-	"question": Array<string>,
+	"content": Array<string>,
 	"show": string,
 	"answer": string
 }
 
 export interface AnswerEntity extends BaseAnswerEntity {
-	question_id: string;
+	riddle_id: string;
 	username: string;
 	answer: string;
 	valie: boolean;
@@ -31,10 +31,10 @@ export default class AnswerRepository {
 		return Promise.resolve(riddles[index]);
 	}
 
-	async post(answer: string, username: string, valid: boolean, questionId: string): Promise<boolean> {
+	async post(answer: string, username: string, valid: boolean, riddleId: string): Promise<boolean> {
 		const {data, error} = await this.dbClient.from('pf_answer')
 			.insert({
-				question_id: questionId,
+				riddle_id: riddleId,
 				answer,
 				username,
 				valid

@@ -4,7 +4,7 @@ import {Client as TMIClient} from 'tmi';
 import {SupabaseClient} from 'supabase';
 import {getMessageCommand} from "./helpers/chat.ts";
 import AnswerRepository from "./repositories/AnswerRepository.ts";
-import {Question} from "./types/Question.ts";
+import {Riddle} from "./types/Riddle.ts";
 
 import Pusher from "npm:pusher-js";
 
@@ -15,52 +15,52 @@ const QUESTION_TIMEOUT = 60000;
 const RIDDLE_LINE_INTERVAL_TIMEOUT = 3000;
 
 
-let currentQuestion: Question | null = null;
-let questionTimeout: number;
+let currentRiddle: Riddle | null = null;
+let riddleTimeout: number;
 
 const supabase = new SupabaseClient(env.SUPABASE_URL as string, env.SUPABASE_KEY as string, {
 	detectSessionInUrl: false,
 });
 
-async function launchQuestion() {
+async function launchRiddle() {
 	const repo = new AnswerRepository(supabase);
-	currentQuestion = await repo.getCurrent();
-	for (const index in currentQuestion.question) {
-		const line = currentQuestion.question[index];
-		setTimeout(function questionLineMessage() {
+	currentRiddle = await repo.getCurrent();
+	for (const index in currentRiddle.content) {
+		const line = currentRiddle.content[index];
+		setTimeout(function riddleLineMessage() {
 			twitchClient.say(env.CHANNEL_NAME, line);
 		}, Number(index) * RIDDLE_LINE_INTERVAL_TIMEOUT);
 	}
 
-	setTimeout(function questionTip() {
+	setTimeout(function riddleTip() {
 		twitchClient.say(env.CHANNEL_NAME, `=> Tapez !pf suivez de votre mot pour répondre. Fin dans ${QUESTION_TIMEOUT / 1000}s !`);
-	}, currentQuestion.question.length * RIDDLE_LINE_INTERVAL_TIMEOUT);
+	}, currentRiddle.content.length * RIDDLE_LINE_INTERVAL_TIMEOUT);
 
-	questionTimeout = setTimeout(function questionEnd() {
-		currentQuestion = null;
+	riddleTimeout = setTimeout(function riddleEnd() {
+		currentRiddle = null;
 		twitchClient.say(env.CHANNEL_NAME, 'Personne n\'a trouvé dans le temps imparti...');
 	}, QUESTION_TIMEOUT);
 }
 
 async function postAnswer(message: string, username: string) {
-	if (currentQuestion === null) {
+	if (currentRiddle === null) {
 		return;
 	}
 
 	const repo = new AnswerRepository(supabase);
 	// Success
-	if (message.toLowerCase().trim() === currentQuestion.answer.toLowerCase().trim()) {
+	if (message.toLowerCase().trim() === currentRiddle.answer.toLowerCase().trim()) {
 		twitchClient.say(env.CHANNEL_NAME, `GG @${username} !!`);
-		clearTimeout(questionTimeout);
-		const isOk = await repo.post(message, username, true, currentQuestion.id);
-		currentQuestion = null;
+		clearTimeout(riddleTimeout);
+		const isOk = await repo.post(message, username, true, currentRiddle.id);
+		currentRiddle = null;
 		if (!isOk) {
 			throw new Error('Unable to insert answer');
 		}
 	}
 	// Wrong
 	else {
-		const isOk = await repo.post(message, username, false, currentQuestion.id);
+		const isOk = await repo.post(message, username, false, currentRiddle.id);
 		if (!isOk) {
 			throw new Error('Unable to insert answer');
 		}
@@ -107,8 +107,8 @@ async function handleTwitchChat() {
 	twitchClient.say(env.CHANNEL_NAME, 'Bonjour jeunes gens');
 
 	twitchClient.on('chat', async function chatHandler(
-		channel: string,
-		{username, 'message-type': messageType}: { username: string; 'message-type': string },
+		_channel: string,
+		{username, 'message-type': _messageType}: { username: string; 'message-type': string },
 		message: string,
 	) {
 		// Create DB
@@ -123,7 +123,7 @@ async function handleTwitchChat() {
 			await showBoard();
 		}
 		// An answer has been post
-		else if (command.message !== '' && currentQuestion !== null) {
+		else if (command.message !== '' && currentRiddle !== null) {
 			await postAnswer(command.message, username);
 		}
 	});
@@ -141,7 +141,7 @@ async function main() {
 	const channel = pusher.subscribe('alert-channel');
 	channel.bind('alert', function (eventData: any) {
 		if (eventData.type === "command" && eventData.commandName === "pf") {
-			launchQuestion();
+			launchRiddle();
 		}
 	});
 }

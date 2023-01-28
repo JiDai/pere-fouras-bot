@@ -822,6 +822,105 @@ export interface paths {
       };
     };
   };
+  "/pf_riddle": {
+    get: {
+      parameters: {
+        query: {
+          id?: parameters["rowFilter.pf_riddle.id"];
+          created_at?: parameters["rowFilter.pf_riddle.created_at"];
+          content?: parameters["rowFilter.pf_riddle.content"];
+          show?: parameters["rowFilter.pf_riddle.show"];
+          answer?: parameters["rowFilter.pf_riddle.answer"];
+          /** Filtering Columns */
+          select?: parameters["select"];
+          /** Ordering */
+          order?: parameters["order"];
+          /** Limiting and Pagination */
+          offset?: parameters["offset"];
+          /** Limiting and Pagination */
+          limit?: parameters["limit"];
+        };
+        header: {
+          /** Limiting and Pagination */
+          Range?: parameters["range"];
+          /** Limiting and Pagination */
+          "Range-Unit"?: parameters["rangeUnit"];
+          /** Preference */
+          Prefer?: parameters["preferCount"];
+        };
+      };
+      responses: {
+        /** OK */
+        200: {
+          schema: definitions["pf_riddle"][];
+        };
+        /** Partial Content */
+        206: unknown;
+      };
+    };
+    post: {
+      parameters: {
+        body: {
+          /** pf_riddle */
+          pf_riddle?: definitions["pf_riddle"];
+        };
+        query: {
+          /** Filtering Columns */
+          select?: parameters["select"];
+        };
+        header: {
+          /** Preference */
+          Prefer?: parameters["preferReturn"];
+        };
+      };
+      responses: {
+        /** Created */
+        201: unknown;
+      };
+    };
+    delete: {
+      parameters: {
+        query: {
+          id?: parameters["rowFilter.pf_riddle.id"];
+          created_at?: parameters["rowFilter.pf_riddle.created_at"];
+          content?: parameters["rowFilter.pf_riddle.content"];
+          show?: parameters["rowFilter.pf_riddle.show"];
+          answer?: parameters["rowFilter.pf_riddle.answer"];
+        };
+        header: {
+          /** Preference */
+          Prefer?: parameters["preferReturn"];
+        };
+      };
+      responses: {
+        /** No Content */
+        204: never;
+      };
+    };
+    patch: {
+      parameters: {
+        query: {
+          id?: parameters["rowFilter.pf_riddle.id"];
+          created_at?: parameters["rowFilter.pf_riddle.created_at"];
+          content?: parameters["rowFilter.pf_riddle.content"];
+          show?: parameters["rowFilter.pf_riddle.show"];
+          answer?: parameters["rowFilter.pf_riddle.answer"];
+        };
+        body: {
+          /** pf_riddle */
+          pf_riddle?: definitions["pf_riddle"];
+        };
+        header: {
+          /** Preference */
+          Prefer?: parameters["preferReturn"];
+        };
+      };
+      responses: {
+        /** No Content */
+        204: never;
+      };
+    };
+  };
   "/planning": {
     get: {
       parameters: {
@@ -1149,7 +1248,7 @@ export interface paths {
         query: {
           id?: parameters["rowFilter.pf_answer.id"];
           created_at?: parameters["rowFilter.pf_answer.created_at"];
-          question_id?: parameters["rowFilter.pf_answer.question_id"];
+          riddle_id?: parameters["rowFilter.pf_answer.riddle_id"];
           username?: parameters["rowFilter.pf_answer.username"];
           answer?: parameters["rowFilter.pf_answer.answer"];
           valid?: parameters["rowFilter.pf_answer.valid"];
@@ -1205,7 +1304,7 @@ export interface paths {
         query: {
           id?: parameters["rowFilter.pf_answer.id"];
           created_at?: parameters["rowFilter.pf_answer.created_at"];
-          question_id?: parameters["rowFilter.pf_answer.question_id"];
+          riddle_id?: parameters["rowFilter.pf_answer.riddle_id"];
           username?: parameters["rowFilter.pf_answer.username"];
           answer?: parameters["rowFilter.pf_answer.answer"];
           valid?: parameters["rowFilter.pf_answer.valid"];
@@ -1225,7 +1324,7 @@ export interface paths {
         query: {
           id?: parameters["rowFilter.pf_answer.id"];
           created_at?: parameters["rowFilter.pf_answer.created_at"];
-          question_id?: parameters["rowFilter.pf_answer.question_id"];
+          riddle_id?: parameters["rowFilter.pf_answer.riddle_id"];
           username?: parameters["rowFilter.pf_answer.username"];
           answer?: parameters["rowFilter.pf_answer.answer"];
           valid?: parameters["rowFilter.pf_answer.valid"];
@@ -1492,6 +1591,25 @@ export interface definitions {
      */
     type: "chat" | "sound_alert" | "visual_alert";
   };
+  pf_riddle: {
+    /**
+     * Format: bigint
+     * @description Note:
+     * This is a Primary Key.<pk/>
+     */
+    id: number;
+    /**
+     * Format: timestamp with time zone
+     * @default now()
+     */
+    created_at?: string;
+    /** Format: character varying */
+    content?: string;
+    /** Format: character varying */
+    show?: string;
+    /** Format: character varying */
+    answer?: string;
+  };
   planning: {
     /**
      * Format: bigint
@@ -1606,7 +1724,7 @@ export interface definitions {
      */
     created_at?: string;
     /** Format: uuid */
-    question_id?: string;
+    riddle_id?: string;
     /** Format: text */
     username?: string;
     /** Format: text */
@@ -1762,6 +1880,18 @@ export interface parameters {
   "rowFilter.command.module": string;
   /** Format: public.command_type */
   "rowFilter.command.type": string;
+  /** @description pf_riddle */
+  "body.pf_riddle": definitions["pf_riddle"];
+  /** Format: bigint */
+  "rowFilter.pf_riddle.id": string;
+  /** Format: timestamp with time zone */
+  "rowFilter.pf_riddle.created_at": string;
+  /** Format: character varying */
+  "rowFilter.pf_riddle.content": string;
+  /** Format: character varying */
+  "rowFilter.pf_riddle.show": string;
+  /** Format: character varying */
+  "rowFilter.pf_riddle.answer": string;
   /** @description planning */
   "body.planning": definitions["planning"];
   /** Format: bigint */
@@ -1821,7 +1951,7 @@ export interface parameters {
   /** Format: timestamp with time zone */
   "rowFilter.pf_answer.created_at": string;
   /** Format: uuid */
-  "rowFilter.pf_answer.question_id": string;
+  "rowFilter.pf_answer.riddle_id": string;
   /** Format: text */
   "rowFilter.pf_answer.username": string;
   /** Format: text */
