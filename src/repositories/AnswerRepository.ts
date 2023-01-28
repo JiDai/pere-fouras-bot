@@ -2,33 +2,13 @@ import type {definitions} from '../types/supabase.ts';
 
 import {SupabaseClient} from "https://deno.land/x/supabase/mod.ts";
 
-import riddles from "../data/riddles.json" assert {type: "json"};
-
 type BaseAnswerEntity = definitions['pf_answer'];
-type RiddleEntity = {
-	"id": string,
-	"content": Array<string>,
-	"show": string,
-	"answer": string
-}
-
-export interface AnswerEntity extends BaseAnswerEntity {
-	riddle_id: string;
-	username: string;
-	answer: string;
-	valie: boolean;
-}
 
 export default class AnswerRepository {
 	readonly dbClient: SupabaseClient;
 
 	constructor(dbClient: SupabaseClient) {
 		this.dbClient = dbClient;
-	}
-
-	getCurrent(): Promise<RiddleEntity> {
-		const index = Math.floor(Math.random() * riddles.length);
-		return Promise.resolve(riddles[index]);
 	}
 
 	async post(answer: string, username: string, valid: boolean, riddleId: string): Promise<boolean> {

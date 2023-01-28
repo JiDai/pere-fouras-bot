@@ -826,11 +826,12 @@ export interface paths {
     get: {
       parameters: {
         query: {
-          id?: parameters["rowFilter.pf_riddle.id"];
           created_at?: parameters["rowFilter.pf_riddle.created_at"];
           content?: parameters["rowFilter.pf_riddle.content"];
           show?: parameters["rowFilter.pf_riddle.show"];
           answer?: parameters["rowFilter.pf_riddle.answer"];
+          id?: parameters["rowFilter.pf_riddle.id"];
+          enabled?: parameters["rowFilter.pf_riddle.enabled"];
           /** Filtering Columns */
           select?: parameters["select"];
           /** Ordering */
@@ -881,11 +882,12 @@ export interface paths {
     delete: {
       parameters: {
         query: {
-          id?: parameters["rowFilter.pf_riddle.id"];
           created_at?: parameters["rowFilter.pf_riddle.created_at"];
           content?: parameters["rowFilter.pf_riddle.content"];
           show?: parameters["rowFilter.pf_riddle.show"];
           answer?: parameters["rowFilter.pf_riddle.answer"];
+          id?: parameters["rowFilter.pf_riddle.id"];
+          enabled?: parameters["rowFilter.pf_riddle.enabled"];
         };
         header: {
           /** Preference */
@@ -900,11 +902,12 @@ export interface paths {
     patch: {
       parameters: {
         query: {
-          id?: parameters["rowFilter.pf_riddle.id"];
           created_at?: parameters["rowFilter.pf_riddle.created_at"];
           content?: parameters["rowFilter.pf_riddle.content"];
           show?: parameters["rowFilter.pf_riddle.show"];
           answer?: parameters["rowFilter.pf_riddle.answer"];
+          id?: parameters["rowFilter.pf_riddle.id"];
+          enabled?: parameters["rowFilter.pf_riddle.enabled"];
         };
         body: {
           /** pf_riddle */
@@ -1593,22 +1596,28 @@ export interface definitions {
   };
   pf_riddle: {
     /**
-     * Format: bigint
-     * @description Note:
-     * This is a Primary Key.<pk/>
-     */
-    id: number;
-    /**
      * Format: timestamp with time zone
      * @default now()
      */
-    created_at?: string;
+    created_at: string;
+    /** Format: ARRAY */
+    content: string[];
     /** Format: character varying */
-    content?: string;
+    show: string;
     /** Format: character varying */
-    show?: string;
-    /** Format: character varying */
-    answer?: string;
+    answer: string;
+    /**
+     * Format: uuid
+     * @description Note:
+     * This is a Primary Key.<pk/>
+     * @default extensions.uuid_generate_v4()
+     */
+    id: string;
+    /**
+     * Format: boolean
+     * @default true
+     */
+    enabled: boolean;
   };
   planning: {
     /**
@@ -1718,21 +1727,19 @@ export interface definitions {
      * This is a Primary Key.<pk/>
      */
     id: number;
+    /** Format: timestamp with time zone */
+    created_at: string;
     /**
-     * Format: timestamp with time zone
-     * @default now()
+     * Format: uuid
+     * @description Note:
+     * This is a Foreign Key to `pf_riddle.id`.<fk table='pf_riddle' column='id'/>
      */
-    created_at?: string;
-    /** Format: uuid */
-    riddle_id?: string;
+    riddle_id: string;
     /** Format: text */
-    username?: string;
+    username: string;
     /** Format: text */
-    answer?: string;
-    /**
-     * Format: boolean
-     * @default false
-     */
+    answer: string;
+    /** Format: boolean */
     valid: boolean;
   };
 }
@@ -1882,16 +1889,18 @@ export interface parameters {
   "rowFilter.command.type": string;
   /** @description pf_riddle */
   "body.pf_riddle": definitions["pf_riddle"];
-  /** Format: bigint */
-  "rowFilter.pf_riddle.id": string;
   /** Format: timestamp with time zone */
   "rowFilter.pf_riddle.created_at": string;
-  /** Format: character varying */
+  /** Format: ARRAY */
   "rowFilter.pf_riddle.content": string;
   /** Format: character varying */
   "rowFilter.pf_riddle.show": string;
   /** Format: character varying */
   "rowFilter.pf_riddle.answer": string;
+  /** Format: uuid */
+  "rowFilter.pf_riddle.id": string;
+  /** Format: boolean */
+  "rowFilter.pf_riddle.enabled": string;
   /** @description planning */
   "body.planning": definitions["planning"];
   /** Format: bigint */

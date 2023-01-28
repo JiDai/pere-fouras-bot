@@ -4,9 +4,9 @@ import {Client as TMIClient} from 'tmi';
 import {SupabaseClient} from 'supabase';
 import {getMessageCommand} from "./helpers/chat.ts";
 import AnswerRepository from "./repositories/AnswerRepository.ts";
-import {Riddle} from "./types/Riddle.ts";
 
 import Pusher from "npm:pusher-js";
+import RiddleRepository, {RiddleEntity} from "./repositories/RiddleRepository.ts";
 
 const env = config();
 
@@ -15,7 +15,7 @@ const QUESTION_TIMEOUT = 60000;
 const RIDDLE_LINE_INTERVAL_TIMEOUT = 3000;
 
 
-let currentRiddle: Riddle | null = null;
+let currentRiddle: RiddleEntity | null = null;
 let riddleTimeout: number;
 
 const supabase = new SupabaseClient(env.SUPABASE_URL as string, env.SUPABASE_KEY as string, {
@@ -23,18 +23,24 @@ const supabase = new SupabaseClient(env.SUPABASE_URL as string, env.SUPABASE_KEY
 });
 
 async function launchRiddle() {
-	const repo = new AnswerRepository(supabase);
+	const repo = new RiddleRepository(supabase);
 	currentRiddle = await repo.getCurrent();
-	for (const index in currentRiddle.content) {
-		const line = currentRiddle.content[index];
-		setTimeout(function riddleLineMessage() {
-			twitchClient.say(env.CHANNEL_NAME, line);
-		}, Number(index) * RIDDLE_LINE_INTERVAL_TIMEOUT);
+
+	if (!currentRiddle) {
+		twitchClient.say(env.CHANNEL_NAME, 'Oups, impossible de trouver une énigme...');
+		return;
 	}
 
+	currentRiddle.content.forEach(function (line: string, index: number) {
+		setTimeout(function riddleLineMessage() {
+			twitchClient.say(env.CHANNEL_NAME, line);
+		}, index * RIDDLE_LINE_INTERVAL_TIMEOUT);
+	});
+
+	const timeout = currentRiddle.content.length * RIDDLE_LINE_INTERVAL_TIMEOUT;
 	setTimeout(function riddleTip() {
 		twitchClient.say(env.CHANNEL_NAME, `=> Tapez !pf suivez de votre mot pour répondre. Fin dans ${QUESTION_TIMEOUT / 1000}s !`);
-	}, currentRiddle.content.length * RIDDLE_LINE_INTERVAL_TIMEOUT);
+	}, timeout);
 
 	riddleTimeout = setTimeout(function riddleEnd() {
 		currentRiddle = null;
