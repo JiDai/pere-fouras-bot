@@ -5,7 +5,7 @@ export function getMessageCommand(message: string): CommandMessage | null {
     if (matches) {
         return {
             name: matches[1],
-            message: matches.length === 3 ? matches[2].trim() : '',
+            args: matches.length === 3 ? matches[2].trim() : '',
         };
     }
     return null;

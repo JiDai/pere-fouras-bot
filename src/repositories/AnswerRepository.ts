@@ -1,8 +1,4 @@
-import type {definitions} from '../types/supabase.ts';
-
 import {SupabaseClient} from "https://deno.land/x/supabase/mod.ts";
-
-type BaseAnswerEntity = definitions['pf_answer'];
 
 export default class AnswerRepository {
 	readonly dbClient: SupabaseClient;
@@ -12,14 +8,20 @@ export default class AnswerRepository {
 	}
 
 	async post(answer: string, username: string, valid: boolean, riddleId: string): Promise<boolean> {
-		const {data, error} = await this.dbClient.from('pf_answer')
+		const {error} = await this.dbClient.from('pf_answer')
 			.insert({
 				riddle_id: riddleId,
 				answer,
 				username,
 				valid
 			});
-		return !(error || data.length === 0);
+
+		if (error) {
+			console.error(error);
+			return false;
+		}
+
+		return true;
 	}
 
 	async getBoard(): Promise<Record<string, number>> {

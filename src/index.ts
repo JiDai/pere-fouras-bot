@@ -61,16 +61,24 @@ async function postAnswer(message: string, username: string) {
 		const isOk = await repo.post(message, username, true, currentRiddle.id);
 		currentRiddle = null;
 		if (!isOk) {
-			throw new Error('Unable to insert answer');
+			console.error('Unable to insert right answer');
 		}
 	}
 	// Wrong
 	else {
 		const isOk = await repo.post(message, username, false, currentRiddle.id);
 		if (!isOk) {
-			throw new Error('Unable to insert answer');
+			console.error('Unable to insert wrong answer');
 		}
 	}
+}
+
+async function showHelp() {
+	twitchClient.say(env.CHANNEL_NAME, "Les énigmes du Père Fouras, " +
+		"répondez et tentez de gagner une clé (steam) en étant premier à la " +
+		"fin de la saison. Utilisez vos point de chaînes pour lancer une énigme. " +
+		"Lisez bien ! La première saison comporte 80 questions. " +
+		"'!pf board' pour voir le classement de la saison.");
 }
 
 async function showBoard() {
@@ -110,7 +118,7 @@ async function handleTwitchChat() {
 		console.error(error);
 	}
 
-	twitchClient.say(env.CHANNEL_NAME, 'Bonjour jeunes gens');
+	// twitchClient.say(env.CHANNEL_NAME, 'Bonjour jeunes gens');
 
 	twitchClient.on('chat', async function chatHandler(
 		_channel: string,
@@ -120,17 +128,24 @@ async function handleTwitchChat() {
 		// Create DB
 		const command = getMessageCommand(message);
 
-		if (!command || command?.name !== 'pf') {
+		if (!command) {
 			return;
 		}
 
+		const {name: commandName, args: commandArgs} = command
+
 		// Board of players
-		if (command.message === 'board') {
+		if (commandName === 'pf' && commandArgs === 'board') {
 			await showBoard();
 		}
 		// An answer has been post
-		else if (command.message !== '' && currentRiddle !== null) {
-			await postAnswer(command.message, username);
+		else if (commandName === 'pf' && commandArgs && currentRiddle !== null) {
+			await postAnswer(commandArgs, username);
+		}
+		// Help command
+		else if (commandName === 'pf' && !commandArgs) {
+			await showHelp();
+			return;
 		}
 	});
 

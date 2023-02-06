@@ -1601,7 +1601,7 @@ export interface definitions {
      */
     created_at: string;
     /** Format: ARRAY */
-    content: string[];
+    content: unknown[];
     /** Format: character varying */
     show: string;
     /** Format: character varying */
@@ -1727,7 +1727,10 @@ export interface definitions {
      * This is a Primary Key.<pk/>
      */
     id: number;
-    /** Format: timestamp with time zone */
+    /**
+     * Format: timestamp with time zone
+     * @default now()
+     */
     created_at: string;
     /**
      * Format: uuid
