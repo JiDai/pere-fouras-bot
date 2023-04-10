@@ -27,8 +27,7 @@ export default class AnswerRepository {
 	async getBoard(): Promise<Record<string, number>> {
 		const {data, error} = await this.dbClient.from('pf_answer')
 			.select('*')
-			.eq('valid', true)
-			.limit(5);
+			.eq('valid', true);
 
 		if (error || !data) {
 			console.error('Cannot get board');
