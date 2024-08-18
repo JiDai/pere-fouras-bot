@@ -19,7 +19,11 @@ dev:
 
 .PHONY: crawl
 crawl:
-	deno run --allow-read --allow-write --allow-net --watch src/crawl.ts
+	deno run --import-map=import_map.json --allow-read --allow-write --allow-net src/crawl.ts
+
+.PHONY: import
+import:
+	deno run --import-map=import_map.json --allow-read --allow-write --allow-net src/import.ts
 
 .PHONY: test
 test:

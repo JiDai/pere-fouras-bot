@@ -1,7 +1,7 @@
 [
   {
     "id": "52364357-0a7b-4538-8356-3dd866ae5e4a",
-    "question": [
+    "content": [
       "Il est toujours au cœur des flammes,",
       "Mais c'est loin d'elles qu'on le fonde.",
       "Encore nombreuses y sont les femmes,",
@@ -13,7 +13,7 @@
   },
   {
     "id": "763cc8b6-400e-4f2c-adba-d1b45bd086aa",
-    "question": [
+    "content": [
       "Celle une cellule,",
       "N’est pas celle blindée",
       "C’est une opération,",
@@ -25,7 +25,7 @@
   },
   {
     "id": "f31cf338-be5a-4f18-80d6-1ddd563d24c4",
-    "question": [
+    "content": [
       "Pour notre dos, c'est un soulagement,",
       "Mais il peut se montrer brûlant.",
       "Cette chemise n'est pas un vêtement,",
@@ -37,7 +37,7 @@
   },
   {
     "id": "b7de0c79-4bbc-482a-a29b-f5bd33702903",
-    "question": [
+    "content": [
       "Il est parfois critique.",
       "Il peut être invoqué.",
       "Fort utile à l'équipe.",
@@ -49,7 +49,7 @@
   },
   {
     "id": "e46a8f1e-d535-437d-9324-d8fa62566511",
-    "question": [
+    "content": [
       "On lui fait constamment la peau.",
       "A vos semelles il est collé.",
       "Il est souvent rond au bureau.",
@@ -61,7 +61,7 @@
   },
   {
     "id": "190d03c9-aa86-483c-8093-e38a3e17a929",
-    "question": [
+    "content": [
       "C'est une apparence qui peut tromper.",
       "Les femmes aiment s'en appliquer.",
       "Parfois recouvrant les souliers.",
@@ -73,7 +73,7 @@
   },
   {
     "id": "41a10736-339a-4a6e-aa56-328363442935",
-    "question": [
+    "content": [
       "Il peut vivre dans les mers,",
       "Ou avoir une jument pour mère,",
       "Dans les compétitions automobiles,",
@@ -85,7 +85,7 @@
   },
   {
     "id": "a2b1d5b9-1d92-4dd6-9a9d-2b7d482fb5d6",
-    "question": [
+    "content": [
       "Il est souvent compris.",
       "Il veut toujours aider.",
       "Il est souvent gagnant.",
@@ -97,7 +97,7 @@
   },
   {
     "id": "08184225-917d-4859-8c07-877b4ac77cb6",
-    "question": [
+    "content": [
       "D’une aile c’est l’extrémité.",
       "En cuisine,",
       "Il est battant.",
@@ -109,7 +109,7 @@
   },
   {
     "id": "9db10355-6544-405f-a1b9-272deb384dee",
-    "question": [
+    "content": [
       "Il est enfermé dans une cage,",
       "Mais il n’est pas sauvage.",
       "S’il peut rendre certains phobiques,",
@@ -121,7 +121,7 @@
   },
   {
     "id": "464673e2-be0a-44f8-9560-2c90a853cd19",
-    "question": [
+    "content": [
       "Elle enveloppe corps et bras,",
       "c'est une feuille de tabac.",
       "C'est une allure de voilier,",
@@ -133,7 +133,7 @@
   },
   {
     "id": "e57f8684-710e-4ec4-b2df-2e9ae27972a7",
-    "question": [
+    "content": [
       "C'est un luminaire,",
       "Il peut être oculaire.",
       "Pour représenter la Terre,",
@@ -145,7 +145,7 @@
   },
   {
     "id": "0598e109-9694-499a-9cb0-0021a83c0987",
-    "question": [
+    "content": [
       "C'est une excroissance ligneuse,",
       "Qui donne au poids sa rareté.",
       "Elle peut être une pierre précieuse,",
@@ -157,7 +157,7 @@
   },
   {
     "id": "6f343b63-5974-48a6-8837-432095b164f6",
-    "question": [
+    "content": [
       "Il peut être chiche sans se montrer,",
       "S'il est cassé ce n'est pas par manque de soin.",
       "Dans une assiette il est parfois très fin,",
@@ -169,7 +169,7 @@
   },
   {
     "id": "3acae416-332f-4db6-9b4d-1e9efc7b980f",
-    "question": [
+    "content": [
       "C’est un fameux tailleur de pièces.",
       "Bravoure ou foi peut témoigner.",
       "On le redoute à son passage,",
@@ -181,7 +181,7 @@
   },
   {
     "id": "de01fa12-3632-4d4d-afd3-f0b14a518294",
-    "question": [
+    "content": [
       "Très couru dès qu’il fait chaud.",
       "L’alpiniste l’affronte et en vise le haut.",
       "C’est une réserve naturelle,",
@@ -193,7 +193,7 @@
   },
   {
     "id": "8c3fd741-9760-4972-aed8-023457be3f04",
-    "question": [
+    "content": [
       "On le fait souvent à regret.",
       "Certaines femmes en font leur métier.",
       "A deux, le sien on peut le monter,",
@@ -205,7 +205,7 @@
   },
   {
     "id": "198ad267-86e7-4edf-9a06-2ac091350445",
-    "question": [
+    "content": [
       "C’est un gouffre au fond l’océan.",
       "Les plongeurs y font leurs entrainements.",
       "Un orchestre peut très bien s’y trouver.",
@@ -217,7 +217,7 @@
   },
   {
     "id": "4efaa3d5-adb7-4b08-a5fd-2d46719bcc57",
-    "question": [
+    "content": [
       "C'est un oiseau qui nage et n'est pas frileux.",
       "Mais aussi un poisson plutôt onéreux.",
       "Cruel ou héroïque, il a pu se montrer",
@@ -229,7 +229,7 @@
   },
   {
     "id": "67815692-67e3-4878-b199-4f4da7b6e528",
-    "question": [
+    "content": [
       "Parfois mauvaise et redoutée,",
       "Elle peut faire des blessés.",
       "Qu'elle soit d'eau ou de reins.",
@@ -241,7 +241,7 @@
   },
   {
     "id": "0dc7150f-d0b2-4ccf-afa2-11e3f5a6dda7",
-    "question": [
+    "content": [
       "Faits de lignes courbes et de contours,",
       "Du fleuve, ils sont tous les détours.",
       "Sinuosités de la pensée,",
@@ -253,7 +253,7 @@
   },
   {
     "id": "46588f9c-ae11-4773-afb3-fbcfea27a9bf",
-    "question": [
+    "content": [
       "Lorsqu'il est donné sur la peau,",
       "Il laisse parfois des bleus.",
       "On l'aime chaud, glacé,",
@@ -265,7 +265,7 @@
   },
   {
     "id": "652eba72-80c0-4e6d-abff-0dc4edc76081",
-    "question": [
+    "content": [
       "C'est un prénom peu usité,",
       "Elle est aussi une herbacée.",
       "Il suffit de l'effeuiller,",
@@ -277,7 +277,7 @@
   },
   {
     "id": "1846e1a3-d12a-4392-a716-10b176da1786",
-    "question": [
+    "content": [
       "Sous les pieds, ou dans la main,",
       "Elle est double pour l'académicien.",
       "En abondance dans les prés,",
@@ -289,7 +289,7 @@
   },
   {
     "id": "19d394cf-c428-4f0e-ac52-7d2134ba25bd",
-    "question": [
+    "content": [
       "Il peut servir aux classements,",
       "Ou glisse sur l'eau lentement.",
       "Il est parfois fait de ciment,",
@@ -301,7 +301,7 @@
   },
   {
     "id": "97c82c34-c595-44e3-9476-eae191e576b3",
-    "question": [
+    "content": [
       "A l'issue de noirs combats,",
       "On l'a celée maintes foi.",
       "Elle vous remplit d'émoi,",
@@ -313,7 +313,7 @@
   },
   {
     "id": "e7978065-d961-4d3e-9a9b-b632855e4267",
-    "question": [
+    "content": [
       "Son vin est né de ferments,",
       "Et c’est aussi un ornement.",
       "En or c’est un grand honneur,",
@@ -325,7 +325,7 @@
   },
   {
     "id": "e527ec42-55c3-4433-90cb-9e84b60d6b52",
-    "question": [
+    "content": [
       "Sa courtoisie est appréciée.",
       "A vos hôtes vous la rendez.",
       "Elle a des cartes par milliers,",
@@ -337,7 +337,7 @@
   },
   {
     "id": "6cc78ada-f12e-4141-b757-5d850865cf6e",
-    "question": [
+    "content": [
       "Autrefois elle acheminait bien du courrier.",
       "Elle est souvent synonyme de voyages.",
       "Parfois au fond d’un grenier,",
@@ -349,7 +349,7 @@
   },
   {
     "id": "eaf8bd01-a3a0-4044-875d-ff5031635245",
-    "question": [
+    "content": [
       "Comme le coton, il est léger,",
       "Et de glace il est constitué.",
       "Cette céréale déshydratée,",
@@ -361,7 +361,7 @@
   },
   {
     "id": "a4339f3a-0184-44da-b367-b32c6968d1c2",
-    "question": [
+    "content": [
       "Elle n'est pas à l'abri d'un coup,",
       "Cependant, elle évite de frapper.",
       "Du serpent elle est tout au bout,",
@@ -373,7 +373,7 @@
   },
   {
     "id": "3ed68dc4-e568-4970-a093-39b68a89ddc8",
-    "question": [
+    "content": [
       "Au balcon, vous l'apercevez,",
       "étoile vient s'y reposer.",
       "Le gardien peut y résider,",
@@ -385,7 +385,7 @@
   },
   {
     "id": "57451b40-bbbb-46e3-81cf-fb609ebaa42a",
-    "question": [
+    "content": [
       "Souvent causé par la distraction,",
       "Cette maladresse peut avoir des répercussions.",
       "Cette perche sert à manœuvrer un bateau,",
@@ -397,7 +397,7 @@
   },
   {
     "id": "65cbc5f9-93d0-4b11-bd01-23042db39a9a",
-    "question": [
+    "content": [
       "Née sous les insurgés,",
       "Cette arme de rebelle,",
       "A beaucoup tournoyer,",
@@ -409,7 +409,7 @@
   },
   {
     "id": "b55f43f5-48b0-4baa-8b76-6db488f0e180",
-    "question": [
+    "content": [
       "On s'appuie très souvent dessus,",
       "Il a régulièrement des frais.",
       "De votre chaise il est connu,",
@@ -421,7 +421,7 @@
   },
   {
     "id": "e160a200-45c1-4ec0-b7fa-1ff6a1c3e53c",
-    "question": [
+    "content": [
       "Du fond de la Provence,",
       "Sous le mistral elle danse.",
       "De son cœur naît l'essence,",
@@ -433,7 +433,7 @@
   },
   {
     "id": "60ef09e2-5531-42a4-b39d-984daa2fa98c",
-    "question": [
+    "content": [
       "Ce signe bien connu,",
       "Symbole d'équilibre et de justice,",
       "Aide le pêcheur assidu,",
@@ -445,7 +445,7 @@
   },
   {
     "id": "9cdbcf56-c523-411d-a957-01884bf6eae1",
-    "question": [
+    "content": [
       "Souvent associé au printemps,",
       "On peut aussi plonger dedans.",
       "Très utile en pâtisserie,",
@@ -457,7 +457,7 @@
   },
   {
     "id": "2478e87c-261e-4861-84b5-2570526a89e9",
-    "question": [
+    "content": [
       "Il peut s'agir d'un soupçon,",
       "Car c'est une petite quantité.",
       "On aime cette peau si parfumée,",
@@ -469,7 +469,7 @@
   },
   {
     "id": "70034f27-fc45-4ae9-bd39-f3b0301fcefd",
-    "question": [
+    "content": [
       "Il est parfois mauvais,",
       "Et peut-être incliné.",
       "Pour ne point s'égarer,",
@@ -481,7 +481,7 @@
   },
   {
     "id": "38ff5ca5-550f-4829-a77b-6a0fab64e0dd",
-    "question": [
+    "content": [
       "On compte sur elle pour le transport,",
       "C'est une bête qu'il faut ménager.",
       "Elle peut être en or,",
@@ -493,7 +493,7 @@
   },
   {
     "id": "217e5c59-ff0d-448e-97c1-4348f889cbef",
-    "question": [
+    "content": [
       "Pinceaux des peintres et doreurs,",
       "Ce sobriquet est peu flatteur.",
       "Il hiberne au fond d'un terrier,",
@@ -505,7 +505,7 @@
   },
   {
     "id": "10d2dd75-2fd2-401a-afd3-5f3d63cc0fa3",
-    "question": [
+    "content": [
       "Il sert à battre le blé,",
       "Et maintient les plateaux d'une balance équilibrée.",
       "Calamité, peste ou choléra,",
@@ -517,7 +517,7 @@
   },
   {
     "id": "3dbc371d-1962-4440-a256-e40ca70d1ab1",
-    "question": [
+    "content": [
       "Quand on a soif, elle est bien utile,",
       "Les couturières, y enroulent un fil.",
       "Cet oiseau n'est pas bien gros,",
@@ -529,7 +529,7 @@
   },
   {
     "id": "be956b90-8ca6-433e-9a5d-f11f24a711a6",
-    "question": [
+    "content": [
       "Son trait est dépourvu d'esprit,",
       "Mais elle ne manque pas de force.",
       "C'est un mariage, une fusion,",
@@ -541,7 +541,7 @@
   },
   {
     "id": "31f9c6f3-7faf-4ad6-9be4-d744d92b76ae",
-    "question": [
+    "content": [
       "Il a fait dormir 100 ans,",
       "La princesse d'un conte d'enfants.",
       "Vêtement de sport d'hiver,",
@@ -553,7 +553,7 @@
   },
   {
     "id": "3452a209-f854-4f40-8225-dbda6e8cfe3a",
-    "question": [
+    "content": [
       "Bien utile pour les fusées,",
       "Il possède une rampe sans être un escalier.",
       "Son action s'applique à la publicité,",
@@ -565,7 +565,7 @@
   },
   {
     "id": "6992bbf4-43bc-46e6-8dce-2901054686a2",
-    "question": [
+    "content": [
       "Sa forme longue et plate,",
       "Fait de bien joli yeux.",
       "C'est une bonne pâte,",
@@ -577,7 +577,7 @@
   },
   {
     "id": "f3abde01-d370-481f-9eaa-cdac2b435365",
-    "question": [
+    "content": [
       "Utile pour le dessin,",
       "On l'imite quand on l'aime bien.",
       "Il adore défiler.",
@@ -589,7 +589,7 @@
   },
   {
     "id": "e7ed89b7-57fc-48b4-a2dd-145dd09e1e70",
-    "question": [
+    "content": [
       "Dans le Jura, c'est un cépage,",
       "On le composait pour le mariage.",
       "En colonie, il faut l'apporter,",
@@ -601,7 +601,7 @@
   },
   {
     "id": "4481f5c6-5fe6-4880-b9fc-de1ee622d0ff",
-    "question": [
+    "content": [
       "A l'abstention il peut pousser,",
       "Il lui arrive de planer,",
       "Son ombre nous fait hésiter,",
@@ -612,7 +612,7 @@
   },
   {
     "id": "f2ff19de-95c5-47a8-940e-b00cd01b9971",
-    "question": [
+    "content": [
       "Jamais en retard il est souvent pressé,",
       "En rondelles il peut être découpé.",
       "Par lui, une couleur est qualifiée,",
@@ -623,7 +623,7 @@
   },
   {
     "id": "b0d54d0b-fad5-4321-a7b9-681316fbcb60",
-    "question": [
+    "content": [
       "De pierre il est souvent constitué,",
       "De feuilles il peut être composé,",
       "De notes on aime le remplir,",
@@ -634,7 +634,7 @@
   },
   {
     "id": "74a7d951-fb9b-484e-8bde-5a726c10beba",
-    "question": [
+    "content": [
       "Rapidement il se déplace,",
       "Et peut parfois laisser des traces.",
       "Souvent précédé par ses chiens,",
@@ -646,7 +646,7 @@
   },
   {
     "id": "c0bf7143-a10c-4d5b-9313-3f34418f68c9",
-    "question": [
+    "content": [
       "Ce danseur souvent apprécié,",
       "Peut-être léger comme un jockey.",
       "Pour clouer il est utilisé,",
@@ -658,7 +658,7 @@
   },
   {
     "id": "33724303-5eb0-49f0-9d58-0de1c92de835",
-    "question": [
+    "content": [
       "Dans son œil il ne voit rien,",
       "Après lui il ne reste rien.",
       "Cette bourrasque en tourbillon,",
@@ -670,7 +670,7 @@
   },
   {
     "id": "b9bbc800-c847-4219-9845-6fae1f8e366e",
-    "question": [
+    "content": [
       "S'il se montre en paillettes,",
       "Ce n'est pas pour faire la fête.",
       "On l'apprécie pour nettoyer,",
@@ -682,7 +682,7 @@
   },
   {
     "id": "5b4483a9-da6d-43dc-a4ff-a23e9711075a",
-    "question": [
+    "content": [
       "Délicieuse est celle de l'agneau,",
       "On y porte un fardeau.",
       "On la change pour le fusil,",
@@ -694,7 +694,7 @@
   },
   {
     "id": "794d99bf-7256-424f-9b38-ae1707f41b35",
-    "question": [
+    "content": [
       "Si vous souhaitez la conserver,",
       "Des excès il faut vous écarter.",
       "Elle marque le départ et l'arrivée,",
@@ -706,7 +706,7 @@
   },
   {
     "id": "5ce43648-8d00-4c72-856f-b3283dfba5c9",
-    "question": [
+    "content": [
       "Elle peut être bien chargée,",
       "Tout en étant obstinée.",
       "On peut l'enfiler au pied,",
@@ -718,7 +718,7 @@
   },
   {
     "id": "fdbc78e7-3ccb-44cc-94d5-4ca1fc4856af",
-    "question": [
+    "content": [
       "Elle est bonne ou mauvaise au figuré,",
       "C'est un bon tour de magicien,",
       "Avec elle le mot devient secret,",
@@ -730,7 +730,7 @@
   },
   {
     "id": "32cd3cf1-96cd-4121-acba-06d844566e8e",
-    "question": [
+    "content": [
       "De monts c'est la ligne dentelée,",
       "Et d'un mur c'est le sommet.",
       "Sur la tête de gallinacées,",
@@ -742,7 +742,7 @@
   },
   {
     "id": "c5b31c77-0135-4ced-bfd7-29a7042d42ed",
-    "question": [
+    "content": [
       "Posée, c'est une question,",
       "Parfois à base de poisson.",
       "On l'utilise en dissolution,",
@@ -754,7 +754,7 @@
   },
   {
     "id": "d015812a-3c03-4731-aff5-f3ab77893354",
-    "question": [
+    "content": [
       "Qu'ils soient hauts, plats ou usés,",
       "Ils sont utiles pour marcher.",
       "Au carnet, ils restent fixés,",
@@ -766,7 +766,7 @@
   },
   {
     "id": "3bcbb267-50ed-44a5-a537-106e3a2285fb",
-    "question": [
+    "content": [
       "D'une grande dureté est le bois de son cœur,",
       "Son nom témoigne de sa couleur.",
       "Taillé, sculpté elle est exotique,",
@@ -778,7 +778,7 @@
   },
   {
     "id": "909a6283-a316-4034-a6e9-7ba33f87f4f3",
-    "question": [
+    "content": [
       "Ce tableau n'est pas vraiment apprécié,",
       "Pour vous nourrir vous la cassez.",
       "En travaillant vous la gagnez,",
@@ -790,7 +790,7 @@
   },
   {
     "id": "a23262cd-cc60-4bae-aa18-7a4b083d5e07",
-    "question": [
+    "content": [
       "Synonyme d'habileté,",
       "Un jongleur sait la gérer.",
       "On la trouve dans un carnet,",
@@ -802,7 +802,7 @@
   },
   {
     "id": "78ab1cd7-0bf9-416d-a7a2-390f633811ef",
-    "question": [
+    "content": [
       "Lorsqu'il quitte sa carrière,",
       "Généralement il est poli.",
       "De veines il est souvent couvert,",
@@ -814,7 +814,7 @@
   },
   {
     "id": "3ec6f432-be7f-43b9-838d-3fc9cc97fcfe",
-    "question": [
+    "content": [
       "Sa peau a certaines propriétés,",
       "Sa chasse est réglementée.",
       "C'est une médaille qu'il faut mériter,",
@@ -826,7 +826,7 @@
   },
   {
     "id": "fdc957a0-4064-4dbb-a882-4be0f760f22c",
-    "question": [
+    "content": [
       "Elle plonge sans un bruit,",
       "Sur les rongeurs imprudents.",
       "C'est aussi un conduit,",
@@ -838,7 +838,7 @@
   },
   {
     "id": "2b29137e-1622-4bf0-8a38-03da90c4f11c",
-    "question": [
+    "content": [
       "Ses marteaux et leurs coups,",
       "N'enfoncent aucun clou.",
       "Doté d'une queue il n'est pas animal,",
@@ -850,7 +850,7 @@
   },
   {
     "id": "89758bb3-2029-43fe-b0fc-adf4041e6bc2",
-    "question": [
+    "content": [
       "C'est un golfe où l'on peut se baigner.",
       "C'est une cloison vitrée.",
       "Petit fruit elle est savoureuse,",
@@ -861,7 +861,7 @@
   },
   {
     "id": "cbc6223e-7066-489a-a0ba-0642c91aa9a2",
-    "question": [
+    "content": [
       "Une table il peut exiger,",
       "De gazon il peut se contenter.",
       "Son filet ne sert à pécher,",
@@ -873,7 +873,7 @@
   },
   {
     "id": "535299b3-cd3f-4205-8b6b-8af7d27dec57",
-    "question": [
+    "content": [
       "Elle désigne une aptitude,",
       "Physique ou mentale.",
       "C'est un haut lieu dans les études,",
@@ -884,7 +884,7 @@
   },
   {
     "id": "54827e46-0be3-44ef-9f00-6009ba2baf78",
-    "question": [
+    "content": [
       "Elle possède sa propre maison,",
       "Et intéresse peu les garçons.",
       "Cible parfois d'aiguilles,",
@@ -896,7 +896,7 @@
   },
   {
     "id": "d31ddb52-a2f3-4321-bc77-295d5f55ded7",
-    "question": [
+    "content": [
       "Chez le notaire c'est un original,",
       "De l'heure c'est une division.",
       "En mesurant votre inattention,",
@@ -908,7 +908,7 @@
   },
   {
     "id": "30ddecd3-9500-448b-a4ed-67b4b71f7263",
-    "question": [
+    "content": [
       "C'était une place publique,",
       "Dans le monde antique.",
       "A Rome ses ruines sont admirées,",
@@ -920,7 +920,7 @@
   },
   {
     "id": "bab2a084-72c3-4a0a-b84f-df8cb357193d",
-    "question": [
+    "content": [
       "Une teinte de rouge elle peut définir,",
       "Des aliments liquides elle peut contenir.",
       "Elle peut être réfractaire,",
@@ -932,7 +932,7 @@
   },
   {
     "id": "d991cbe5-844d-473a-8f8f-e34da75617b6",
-    "question": [
+    "content": [
       "Elle fait marcher à la baguette,",
       "Elle connaît la dextérité.",
       "Vieille et laide ou jeune et jolie,",
@@ -944,7 +944,7 @@
   },
   {
     "id": "67c2d64b-c193-4428-aba2-7490d8e189f7",
-    "question": [
+    "content": [
       "Il lui arrive d'être à terre,",
       "Dans le plat on le met par paire.",
       "A la lettre parfois collé,",
@@ -956,7 +956,7 @@
   },
   {
     "id": "b05c617e-4be1-4af0-b853-e2969163aa7d",
-    "question": [
+    "content": [
       "Elle figure une somme d’argent.",
       "Confortable une siège elle rend.",
       "Chaque année elle nous couronne,",
@@ -968,7 +968,7 @@
   },
   {
     "id": "a308335d-e0bb-4c9d-be97-e7d80681cb84",
-    "question": [
+    "content": [
       "Il peut être fait de soie,",
       "Ou encore de chocolat.",
       "Ce parfait quadrilatère,",
@@ -980,7 +980,7 @@
   },
   {
     "id": "43ce3e30-d060-4655-b8a7-e4b780345d85",
-    "question": [
+    "content": [
       "Dans cet ensemble d’idées,",
       "On est parfois égaré.",
       "Ces fleurs à l’aspect velouté,",
@@ -992,7 +992,7 @@
   },
   {
     "id": "96ddd1bc-40ec-4520-aff3-e392b54fde8f",
-    "question": [
+    "content": [
       "Parfois loin de la réalité,",
       "Une image elle peut accompagner.",
       "La réponse ici trouvée,",
@@ -1004,7 +1004,7 @@
   },
   {
     "id": "cdedccff-8c2f-46f3-8d90-f14863cb5fe1",
-    "question": [
+    "content": [
       "A ce jeu on peut gagner un lot.",
       "C’est une épreuve pour les chevaux.",
       "Cet examen établit un classement,",
@@ -1016,7 +1016,7 @@
   },
   {
     "id": "f05ab8da-7c66-4cec-b692-4f9aead0e2b2",
-    "question": [
+    "content": [
       "Instrument qui ne joue pas de musique,",
       "Son aiguille personne ne pique.",
       "On se trouve tout affolé,",
@@ -1028,7 +1028,7 @@
   },
   {
     "id": "643206b1-8e01-49b3-af42-6a6301df83ab",
-    "question": [
+    "content": [
       "Pour les yeux c’est un joli coloris.",
       "Ce café est légèrement adouci.",
       "On peut consommer ce fruit,",
@@ -1040,7 +1040,7 @@
   },
   {
     "id": "2bb70102-84b7-4dcf-82c4-f0b080dca01d",
-    "question": [
+    "content": [
       "C’est un espace bien silencieux.",
       "On peut le regarder dans les yeux.",
       "C’est une manière de chauffer.",
@@ -1052,7 +1052,7 @@
   },
   {
     "id": "3868813c-d334-44ee-b413-3e34aaf10f26",
-    "question": [
+    "content": [
       "Rarement le chien s’en sépare,",
       "Et bien souvent, la femme s’en pare.",
       "Son coup demande des efforts,",
@@ -1064,7 +1064,7 @@
   },
   {
     "id": "5266697f-bfbc-4c96-b2af-ae7ba2140fc4",
-    "question": [
+    "content": [
       "Son coup est toujours surprenant.",
       "Ses pièces ne sont pas d’argent.",
       "Il est réputé pour ses scènes.",
@@ -1076,7 +1076,7 @@
   },
   {
     "id": "e4c9eef9-5e03-45e3-b52e-f3c5660471b3",
-    "question": [
+    "content": [
       "Elle peut être un mari.",
       "Il s'agit d'une partie.",
       "Pour pouvoir la trouver,",
@@ -1088,7 +1088,7 @@
   },
   {
     "id": "5bac3c48-8124-4fa5-ac11-bdc4990ab5e4",
-    "question": [
+    "content": [
       "Il résulte de la gravitation.",
       "Sur le cœur, il fait pression.",
       "Son lancer est digne du champion,",
@@ -1100,7 +1100,7 @@
   },
   {
     "id": "3d2d20f2-1975-41fd-95b9-46080860fa79",
-    "question": [
+    "content": [
       "Sur une table, on peut y jouer.",
       "Sur un terrain, le pratiquer.",
       "Devant un mur, s’y entraîner.",
@@ -1112,7 +1112,7 @@
   },
   {
     "id": "00dc1e29-2ae6-4d5b-b9a8-40eb962543ad",
-    "question": [
+    "content": [
       "Il est toujours courbé.",
       "Dedans, on doit souffler.",
       "Ce fil de fer replié,",
@@ -1124,7 +1124,7 @@
   },
   {
     "id": "6bb2e853-4ab7-4929-9fd4-a87cd6b4c767",
-    "question": [
+    "content": [
       "Faite de trous et de bosses,",
       "C'est une curieuse boîte en os.",
       "Fractures, migraines ou céphalées,",
@@ -1136,7 +1136,7 @@
   },
   {
     "id": "2bad0e76-6f00-4b98-943d-002f7b1a42d5",
-    "question": [
+    "content": [
       "Ce col n'est pas sur un vêtement.",
       "Du carnaval, c'est un beau moment.",
       "alpiniste doit le passer.",
@@ -1148,7 +1148,7 @@
   },
   {
     "id": "85e82a46-d6d6-4322-9a12-efc3aec4743f",
-    "question": [
+    "content": [
       "A piquer elle s'entête,",
       "Jusqu'à être gavée.",
       "Certaines cartes en sont dotées,",
@@ -1160,7 +1160,7 @@
   },
   {
     "id": "2f35084d-30ed-4147-94eb-77da5675cba6",
-    "question": [
+    "content": [
       "Toujours près du zénith,",
       "On le sonne à son arrivée.",
       "Parfois le sud, il nous indique.",
@@ -1172,7 +1172,7 @@
   },
   {
     "id": "747582bf-7d9d-4589-8ca6-248b4c9b6c26",
-    "question": [
+    "content": [
       "Miroir, tant son dos est brillant,",
       "Elle vit tout au fond des étangs.",
       "Comme elle nous faisons bien des sauts,",
@@ -1184,7 +1184,7 @@
   },
   {
     "id": "53f78ff2-7162-45c8-b4e3-c2994f10f893",
-    "question": [
+    "content": [
       "Sans lui, pas de culture.",
       "Sa clé n'ouvre aucune serrure.",
       "Le gymnaste peut y exceller.",
@@ -1196,7 +1196,7 @@
   },
   {
     "id": "70eb00cd-8fda-49ab-88aa-f7352f9fb54f",
-    "question": [
+    "content": [
       "Elle est plus facile à tourner,",
       "Lorsqu'on l'a allongée.",
       "Blanche ou bien chocolatée,",
@@ -1208,7 +1208,7 @@
   },
   {
     "id": "a79337bd-77f6-4e5a-8b31-d64584b5ff11",
-    "question": [
+    "content": [
       "On le dit parfois populaire.",
       "Par les premiers, il est ouvert.",
       "On y croise les débutants.",
@@ -1220,7 +1220,7 @@
   },
   {
     "id": "84821ee7-f448-4a43-9689-1035d0b16900",
-    "question": [
+    "content": [
       "Contre elle on a une dent,",
       "On a peur quand on l'entend.",
       "Elle nous fait jouer pourtant,",
@@ -1232,7 +1232,7 @@
   },
   {
     "id": "c6fe2b3b-4094-4d70-bf61-b9944a14d253",
-    "question": [
+    "content": [
       "Cette petite bête qui se multiplie,",
       "Aime bien sortir la nuit.",
       "Tout d'un coup et sans avis,",
@@ -1244,7 +1244,7 @@
   },
   {
     "id": "849d533e-e6d0-4666-bd7b-fce8e3786f38",
-    "question": [
+    "content": [
       "Il peut être aussi bien lourd que léger,",
       "Quand il est utilisé pour construire.",
       "Si en défense il peut être joué,",
@@ -1256,7 +1256,7 @@
   },
   {
     "id": "75c24c6a-f3ca-4683-97ed-37506e04a50c",
-    "question": [
+    "content": [
       "C'est un plat consistant.",
       "Elle s'oppose au courant.",
       "Sans véhicule est ce conducteur.",
@@ -1268,7 +1268,7 @@
   },
   {
     "id": "d5e87ed0-3d61-438f-be5d-2b39edb490d6",
-    "question": [
+    "content": [
       "Parfois blanche ou bleue, souvent noire.",
       "On est discret lorsqu'on y rit.",
       "Elle s'apparente souvent à l'ennui,",
@@ -1280,7 +1280,7 @@
   },
   {
     "id": "2c5bc220-b1bb-4d31-868c-c4f982314411",
-    "question": [
+    "content": [
       "C'est un corps en mouvement,",
       "Qui égaye les chambres d'enfants.",
       "On s'efforcera de le découvrir,",
@@ -1292,7 +1292,7 @@
   },
   {
     "id": "69deac61-3fd7-4408-9aba-526eede42743",
-    "question": [
+    "content": [
       "A l'abstention il peut pousser.",
       "Il lui arrive de planer.",
       "Son ombre nous fait hésiter.",
@@ -1304,7 +1304,7 @@
   },
   {
     "id": "f4023bba-37ed-4db6-a167-4d1cbc21400b",
-    "question": [
+    "content": [
       "Si de sable il est.",
       "Ou de maisons est composé...",
       "On peut aussi bien le manger.",
@@ -1316,7 +1316,7 @@
   },
   {
     "id": "c8a07250-9565-4593-91f6-e89de96a13e5",
-    "question": [
+    "content": [
       "Morceau de pain très bon marché,",
       "C'est une faible quantité.",
       "On peut la servir à la reine,",
@@ -1328,7 +1328,7 @@
   },
   {
     "id": "dd33a960-2dfa-48e4-8f0b-34292ad9fe68",
-    "question": [
+    "content": [
       "Cette graine consommée,",
       "Est pleine de qualités.",
       "Elle fait le bonheur des myopes,",
@@ -1340,7 +1340,7 @@
   },
   {
     "id": "9fcf3756-31a3-482a-8254-43dd4c50184a",
-    "question": [
+    "content": [
       "Il est gros pour les tous petits,",
       "Et d'amour il fait languir les grands.",
       "De larmes il est souvent suivi,",
@@ -1352,7 +1352,7 @@
   },
   {
     "id": "497b2054-b6f3-4fe7-b8f8-32a65fc0ae1c",
-    "question": [
+    "content": [
       "Courte elle permet de s'élever,",
       "Pour lire une carte il vous la faut.",
       "Dessous certains ne veulent passer",
@@ -1364,7 +1364,7 @@
   },
   {
     "id": "dda952ba-eb9a-4b65-bbba-7d347c597a2b",
-    "question": [
+    "content": [
       "La croquer sous la dent est un réel délice.",
       "Mais au même endroit pourtant,",
       "Elle peut être un vrai supplice.",
@@ -1375,7 +1375,7 @@
   },
   {
     "id": "0c8cfdf7-b4bb-4a57-8f28-9952574b8334",
-    "question": [
+    "content": [
       "Sa robe sied au casanier,",
       "Et l'air lui permet de rouler.",
       "Sa musique a peu d'instruments.",
@@ -1387,7 +1387,7 @@
   },
   {
     "id": "088e1087-79da-4ca2-bcbe-be31f15aedb0",
-    "question": [
+    "content": [
       "Très sensible près de la peau,",
       "Mais ne manquant jamais de pot.",
       "En faire une est une faveur,",
@@ -1399,7 +1399,7 @@
   },
   {
     "id": "8ead6348-0813-48ff-aae7-d2d936d3c709",
-    "question": [
+    "content": [
       "Elle a pour habitude de dire la vérité.",
       "D'amour ou d'affection elle peut témoigner.",
       "Il faut en faire plusieurs pour être reconnu.",
@@ -1411,7 +1411,7 @@
   },
   {
     "id": "f2c90a31-a61a-4118-8e05-03a816927768",
-    "question": [
+    "content": [
       "Les habits des mannequins,",
       "Elle coud, surfile et pique.",
       "Elle permet aux comédiens,",
@@ -1423,7 +1423,7 @@
   },
   {
     "id": "1c60798a-0428-4a4a-9a73-8f3a6519e7d8",
-    "question": [
+    "content": [
       "On l'extrait des sols miniers,",
       "Et elle se vend sur les marchés.",
       "Elle peut parfois faire marcher,",
@@ -1435,7 +1435,7 @@
   },
   {
     "id": "f441130f-c24d-414e-9a94-353e7b2a43c9",
-    "question": [
+    "content": [
       "\"D'adresses\" il n'a jamais manqué.",
       "Il peut faire preuve de santé.",
       "De ses notes on ne peut pas jouer.",
@@ -1447,7 +1447,7 @@
   },
   {
     "id": "1c86bd69-88ff-4a30-b12e-8ee0a4f1ec80",
-    "question": [
+    "content": [
       "Elle peut être de fond ou de coton,",
       "Piège mortel pour les moucherons.",
       "Quand elle est exceptionnelle,",
@@ -1459,7 +1459,7 @@
   },
   {
     "id": "6fb0cf90-28e0-4f9f-8fb6-62a182a7577c",
-    "question": [
+    "content": [
       "Célèbre pour sa rapidité,",
       "il peut marquer notre lucidité.",
       "C'est une lueur qui peut être dangereuse,",
@@ -1471,7 +1471,7 @@
   },
   {
     "id": "03f92aeb-d312-4c9c-8942-a3f4073b5789",
-    "question": [
+    "content": [
       "Ses activités sous-marines,",
       "amènent à croiser des requins.",
       "S'il se cantonne à la cuisine,",
@@ -1483,7 +1483,7 @@
   },
   {
     "id": "5911912c-b971-4c0b-9b7c-fffdeb1cb697",
-    "question": [
+    "content": [
       "Choses et gens, par lui sont séparés.",
       "De langage, c'est une grossièreté.",
       "Aux danseuses le grand est réservé.",
@@ -1495,7 +1495,7 @@
   },
   {
     "id": "f5981c3e-7612-46e1-ba52-a62f92fd9e8c",
-    "question": [
+    "content": [
       "Par nature il n'est pas solitaire.",
       "Il est sanguin mais pas sanguinaire.",
       "Il réunit chanteurs de rap ou militaires.",
@@ -1506,7 +1506,7 @@
   },
   {
     "id": "61494692-f84a-4c2e-9139-1e7c17507019",
-    "question": [
+    "content": [
       "Le chat aime bien courir après.",
       "De laine, elle peut être formée.",
       "Dans le sud-ouest on aime y jouer,",
@@ -1518,7 +1518,7 @@
   },
   {
     "id": "d418bb23-7bb8-4a9a-8ac8-1ce9f94b034f",
-    "question": [
+    "content": [
       "Pour la chambre il est tout petit.",
       "Souvent dans la fosse, il est mis.",
       "Son fauteuil est placé devant.",
@@ -1530,7 +1530,7 @@
   },
   {
     "id": "08a5143f-e93e-4d9d-b9ca-fe9465759278",
-    "question": [
+    "content": [
       "Ce légume cultivé,",
       "N'est dans le sang pas apprécié.",
       "Si l'auteur ne le recherche point,",
@@ -1542,7 +1542,7 @@
   },
   {
     "id": "83afdd17-82ee-44e6-ba19-73acf78587d0",
-    "question": [
+    "content": [
       "On ne voit rien dans ses carreaux,",
       "Le dîner repose sur elle.",
       "Parfois potable quand elle est d'eau,",
@@ -1554,7 +1554,7 @@
   },
   {
     "id": "7b2b935d-f07d-4c9f-810d-709155167a25",
-    "question": [
+    "content": [
       "Il est enfermé dans une cage,",
       "Mais il n'est pas sauvage.",
       "S'il peut rendre certains phobiques,",
@@ -1566,7 +1566,7 @@
   },
   {
     "id": "9cef03bd-f7b6-495b-9940-8dba2c126efe",
-    "question": [
+    "content": [
       "Il prend des coups sans arrêt mais sans peine.",
       "Ovale, ses réactions sont incertaines.",
       "Au gré des vents, il vogue en l'air.",
@@ -1578,7 +1578,7 @@
   },
   {
     "id": "90993d77-af13-454f-a844-7c0a2c32b22d",
-    "question": [
+    "content": [
       "Connue pour ses galeries,",
       "Et le ton de son gris.",
       "Elle évoque la mauvaise vision.",
@@ -1590,7 +1590,7 @@
   },
   {
     "id": "9077fe60-4606-422d-a828-b8b14baa4705",
-    "question": [
+    "content": [
       "Il n'est pas offert mais donné.",
       "Il a tendance à commander.",
       "Celui du jour est à traiter.",
@@ -1602,7 +1602,7 @@
   },
   {
     "id": "4c01fc03-9764-4667-8fcf-4af5fc1e7cf6",
-    "question": [
+    "content": [
       "On le déguise à l'occasion.",
       "Cultivé mais pas érudit.",
       "Plutôt acide est sa passion.",
@@ -1614,7 +1614,7 @@
   },
   {
     "id": "5cae4b8c-0a29-4496-b3e8-b5c07893614e",
-    "question": [
+    "content": [
       "Il est parfois très agité,",
       "Au plomb on peut le comparer.",
       "Réparateur très apprécié,",
@@ -1626,7 +1626,7 @@
   },
   {
     "id": "9dfbdb27-3973-4a5a-8583-60023d1c240b",
-    "question": [
+    "content": [
       "Dans l'urgence vous le pressez.",
       "A la grève il est associé.",
       "D'une symphonie c'est un morceau.",
@@ -1638,7 +1638,7 @@
   },
   {
     "id": "fa97858d-d864-4ea7-a99f-50b301385801",
-    "question": [
+    "content": [
       "Très couru dès qu'il fait chaud,",
       "alpiniste l'affronte et en vise le haut.",
       "C'est une réserve naturelle,",
@@ -1650,7 +1650,7 @@
   },
   {
     "id": "1a5577d7-ed13-4b94-99ab-2922b583388e",
-    "question": [
+    "content": [
       "On peut en trouver des carrées,",
       "On peut la prendre sans bouger,",
       "C'est par elle qu'on attaque le mal,",
@@ -1662,7 +1662,7 @@
   },
   {
     "id": "10f128b4-cc06-48fc-bd4d-69e6c70cf63e",
-    "question": [
+    "content": [
       "Le fou peut être à ses côtés.",
       "Son enfant est souvent gâté.",
       "Lorsqu'il est bleu, il est très vif.",
@@ -1674,7 +1674,7 @@
   },
   {
     "id": "0d9facb3-6b50-4fa3-84bc-33565d3fb317",
-    "question": [
+    "content": [
       "Dotée de ses deux L,",
       "C’est presque une ritournelle.",
       "Sitôt qu'on en ôte un,",
@@ -1686,7 +1686,7 @@
   },
   {
     "id": "dc16fb82-49dc-4251-a169-63d2d30cda43",
-    "question": [
+    "content": [
       "Souvent causée par la distraction,",
       "Cette maladresse peut avoir des répercussions.",
       "Cette perche sert à manœuvrer un bateau,",
@@ -1698,7 +1698,7 @@
   },
   {
     "id": "3be0cbbd-e00d-4147-95c5-3f207fe76721",
-    "question": [
+    "content": [
       "Sur une planche, il fait bûcher.",
       "Sa bouchée n'est pas très cotée.",
       "D'une bouche, il peut être ôté.",
@@ -1710,7 +1710,7 @@
   },
   {
     "id": "34e4549a-7550-4275-aa14-ce665e250127",
-    "question": [
+    "content": [
       "Elles font zigzaguer les champions,",
       "Et permettent la communication.",
       "Dérobées sans jamais être volées,",
@@ -1722,7 +1722,7 @@
   },
   {
     "id": "ea17175e-16d4-49cd-85a1-da74f0b12350",
-    "question": [
+    "content": [
       "Dans sa salle, on perd ses pas.",
       "Sur ses panneaux on cherche sa voie.",
       "On peut y voir de nombreuses rames.",
@@ -1734,7 +1734,7 @@
   },
   {
     "id": "01cf5cdb-bd23-42a5-8530-9b852ccac6f4",
-    "question": [
+    "content": [
       "Cadeau qu'on fait à un félin.",
       "Qui dans la poche parfois n'est point.",
       "Souvent tirée par les petits.",
@@ -1746,7 +1746,7 @@
   },
   {
     "id": "f717065c-2898-4b12-a405-365930d568c7",
-    "question": [
+    "content": [
       "Trajectoire parfois calculée,",
       "Elle sert notamment pour les fusées,",
       "Cette cavité est par l'œil aussi habitée.",
@@ -1757,7 +1757,7 @@
   },
   {
     "id": "104c1d68-09df-41a7-a685-751242fde0c6",
-    "question": [
+    "content": [
       "On peut la perdre ou la voiler,",
       "La sauver ou encore la cacher.",
       "D'une médaille c'est un côté.",
@@ -1769,7 +1769,7 @@
   },
   {
     "id": "dfc10345-7011-4f05-a38c-d6d4d0e2576b",
-    "question": [
+    "content": [
       "Il est enfermé dans une cage,",
       "Mais il n'est pas sauvage.",
       "S'il peut rendre certains phobiques,",
@@ -1781,7 +1781,7 @@
   },
   {
     "id": "a5ae263b-f59e-4f3a-b9e4-75d88a16e574",
-    "question": [
+    "content": [
       "Pour les enfants le noir,",
       "En est souvent source le soir.",
       "Mais qu'elle soit bleue ou belle,",
@@ -1793,7 +1793,7 @@
   },
   {
     "id": "d8c9d783-354e-469c-ade7-7fecc258ef1e",
-    "question": [
+    "content": [
       "Il peut être rond, carré et bien moulé.",
       "Servi au marché il est découpé.",
       "Ça ne vaut pas le coup d'en faire un,",
@@ -1805,7 +1805,7 @@
   },
   {
     "id": "e82e653a-a238-457b-a53f-98bebc781476",
-    "question": [
+    "content": [
       "Petit four quand on le mange.",
       "Convertible quand on le range.",
       "On aime bien s'y enfoncer.",
@@ -1817,7 +1817,7 @@
   },
   {
     "id": "7b1edf03-90a4-494a-9d69-2e749fe9caf5",
-    "question": [
+    "content": [
       "C'est un accessoire très utile,",
       "Qui est petit et attachant.",
       "Et s'il ne tient que par un fil,",
@@ -1829,7 +1829,7 @@
   },
   {
     "id": "178521af-a458-4ad9-9608-dc20a6e50c38",
-    "question": [
+    "content": [
       "Il fait dans la restauration.",
       "On y trouve un conservateur.",
       "On apprécie sa collection.",
@@ -1841,7 +1841,7 @@
   },
   {
     "id": "469b77d0-8d09-4209-85cf-9fa806d14b45",
-    "question": [
+    "content": [
       "Elle peut descendre ou bien s'élever",
       "Et au fil des ans elle peut changer.",
       "Pour elle, des cordes sont utilisées",
@@ -1853,7 +1853,7 @@
   },
   {
     "id": "7a4fd3b5-9ee5-4c02-b382-430e7504925d",
-    "question": [
+    "content": [
       "A votre seuil elle est souvent,",
       "Son coup fatigue promptement,",
       "Son code est assez répandu,",
@@ -1865,7 +1865,7 @@
   },
   {
     "id": "44feacd5-1790-413c-8042-ee4211cdcd6f",
-    "question": [
+    "content": [
       "Ses ailes qui sont dépouillées,",
       "Ne lui servent pas à voler.",
       "Bien qu'âgé très souvent",
@@ -1877,7 +1877,7 @@
   },
   {
     "id": "8b01c463-1b75-4e5f-bbb2-c1cbd21e42f1",
-    "question": [
+    "content": [
       "Ce véhicule ne se trouve pas à côté du premier,",
       "Mais il ne faut pas le rater, car c'est le dernier.",
       "C'est aussi une valeur égale à une année,",
@@ -1889,7 +1889,7 @@
   },
   {
     "id": "ebe1ce4b-76dd-4751-b616-426d7552daa3",
-    "question": [
+    "content": [
       "Il faut bien rentrer dedans, nous répète-t-on souvent.",
       "C'est un chef au restaurant.",
       "A l'école s'y met l'enfant.",
@@ -1900,7 +1900,7 @@
   },
   {
     "id": "1fc717cf-2f58-4fb8-8578-c5695a3461ba",
-    "question": [
+    "content": [
       "C'est une grande experte en tours.",
       "Elle est parfois d'un grand secours.",
       "C'est aussi une acrobatie.",
@@ -1912,7 +1912,7 @@
   },
   {
     "id": "f9439c3f-7d97-4de7-abda-3bc32424ee45",
-    "question": [
+    "content": [
       "Cette pierre tendre et feuilletée,",
       "En Bretagne, est très employée.",
       "Les écoliers l'ont tous levée.",
@@ -1924,7 +1924,7 @@
   },
   {
     "id": "810e3c3c-7ed1-4915-9ffe-26b3a47176d0",
-    "question": [
+    "content": [
       "C'est un habitant d'une lointaine contrée,",
       "Un oiseau qui ne sait pas voler,",
       "Sa chair au goût particulier",
@@ -1936,7 +1936,7 @@
   },
   {
     "id": "f33b536c-30d3-4607-8c78-698012a6e9f4",
-    "question": [
+    "content": [
       "C'est un entassement d'objets,",
       "Une partie de pièce de monnaie,",
       "Elle fournit de l'énergie,",
@@ -1948,7 +1948,7 @@
   },
   {
     "id": "80bb7ce7-6224-4e75-b734-404742d7c97c",
-    "question": [
+    "content": [
       "Pour unir et pour assembler,",
       "Son pas doit être enfoncé.",
       "Pour ce faire, il n'y a qu'une recette,",
@@ -1960,7 +1960,7 @@
   },
   {
     "id": "77def199-29c7-4584-839e-f8d162a48b44",
-    "question": [
+    "content": [
       "Petit, il est terme d'affection.",
       "Mauvais, il change le goût du vin.",
       "Parfois poussé trop loin.",
@@ -1972,7 +1972,7 @@
   },
   {
     "id": "f04a4658-7183-414d-bfe9-1c6620845866",
-    "question": [
+    "content": [
       "Un aigle il représentait",
       "Pour les romains qui se battaient.",
       "Cet emblème symbolique,",
@@ -1984,7 +1984,7 @@
   },
   {
     "id": "fe237e38-a395-45ce-84ff-29113425aaea",
-    "question": [
+    "content": [
       "Ses marteaux et leurs coups",
       "N'enfoncent aucun clou.",
       "Doté d'une queue, il n'est pas animal.",
@@ -1996,7 +1996,7 @@
   },
   {
     "id": "81a6518b-79f2-4e93-a027-16f04e36195d",
-    "question": [
+    "content": [
       "Chorégraphie des plus petits,",
       "Souvent effectuée de nuit,",
       "Sur son chemin le garde va,",
@@ -2008,7 +2008,7 @@
   },
   {
     "id": "501d5461-505d-4c88-86f9-c1a4369f565c",
-    "question": [
+    "content": [
       "C'est un oubli partiel et momentané.",
       "Il est perdu dans une campagne éloignée.",
       "Et si chacun peut faire le sien,",
@@ -2020,7 +2020,7 @@
   },
   {
     "id": "357194ed-b915-4208-a74f-455ae42c5b51",
-    "question": [
+    "content": [
       "Même si on a plaisir à la dorer,",
       "C'est avec difficulté qu'elle est avalée.",
       "Qui est-elle ?"
@@ -2030,7 +2030,7 @@
   },
   {
     "id": "c33e3064-7dfe-464e-b4e3-511b0a46384a",
-    "question": [
+    "content": [
       "Sa poudre embellit nos visages.",
       "Son papier recueille nos messages.",
       "Mais c'est au fond d'un bol venu d'Asie,",
@@ -2042,7 +2042,7 @@
   },
   {
     "id": "9a8c8380-a9b0-4a2e-add9-a7b5a04101e6",
-    "question": [
+    "content": [
       "C'est une personne influente,",
       "Elle est assez souvent pressée,",
       "D'une peinture la composante,",
@@ -2054,7 +2054,7 @@
   },
   {
     "id": "d902b57c-5b50-4ac9-89d3-3b640cf968be",
-    "question": [
+    "content": [
       "Si de bon, parfois, il est qualifié,",
       "A transporter, il peut aider.",
       "S'il possède une certaine beauté,",
@@ -2066,7 +2066,7 @@
   },
   {
     "id": "3bb44cf9-d169-4e0e-9942-1c4a01c7456e",
-    "question": [
+    "content": [
       "En haut du cocotier, elle nous fait grimper.",
       "Celle du veau est très appréciée.",
       "Sa coquille est une embarcation de marins.",
@@ -2077,7 +2077,7 @@
   },
   {
     "id": "20177a8f-f406-444e-9a71-f33ff810f4f2",
-    "question": [
+    "content": [
       "Dans une formule consacrée,",
       "Par une cour est exigée.",
       "A quelqu'un peut être assénée,",
@@ -2089,7 +2089,7 @@
   },
   {
     "id": "6cc1c219-9d0e-4ace-95ce-93e435a896a4",
-    "question": [
+    "content": [
       "Volatile et si fine,",
       "Elle peut tracer des mots.",
       "Poids léger sur le ring,",
@@ -2101,7 +2101,7 @@
   },
   {
     "id": "ef1cd06f-21aa-46af-9fb5-71349eb36640",
-    "question": [
+    "content": [
       "Lorsqu'il est faux, bien maladroit,",
       "Souvent coûteux, s'il est premier,",
       "C'est en dansant qu'il est chassé,",
@@ -2113,7 +2113,7 @@
   },
   {
     "id": "c968dfa0-0358-4d2a-a277-ca9b41dbca8d",
-    "question": [
+    "content": [
       "Le vinaigre n'est pas conseillé,",
       "Si l'on désire l'attraper.",
       "Et elle est toujours évoquée,",
@@ -2125,7 +2125,7 @@
   },
   {
     "id": "20d36f0f-ab6a-4e5c-91e4-5f59004c56f8",
-    "question": [
+    "content": [
       "Inscrite dès notre naissance,",
       "On ne peut lui échapper.",
       "Chacun doit lui faire confiance,",
@@ -2137,7 +2137,7 @@
   },
   {
     "id": "26e730fd-a623-483e-b41e-de8982ba574b",
-    "question": [
+    "content": [
       "Sans annonce elle survient,",
       "Et vous tord du cœur aux reins.",
       "On la pique, et c'est épique,",
@@ -2149,7 +2149,7 @@
   },
   {
     "id": "92163c80-0976-4632-be7f-7134640b3242",
-    "question": [
+    "content": [
       "Il se tient toujours sur un pied,",
       "Porte parfois la collerette.",
       "Par un chapeau, il est coiffé.",
@@ -2161,7 +2161,7 @@
   },
   {
     "id": "35e55218-c255-43a5-8643-eb73a9c745ae",
-    "question": [
+    "content": [
       "Cycliste prenant position,",
       "Au ballet elle est habituée.",
       "Etoile sans constellation,",
@@ -2173,7 +2173,7 @@
   },
   {
     "id": "d8eefafc-c65e-4124-a01d-8610d0b27ad6",
-    "question": [
+    "content": [
       "C’est un maître de l’illusion,",
       "Sujet à interprétation,",
       "Il apparaît quand vient le soir,",
@@ -2185,7 +2185,7 @@
   },
   {
     "id": "6b40a49c-f86d-4c90-be1b-66d59a11aec8",
-    "question": [
+    "content": [
       "C'est un îlot sans mer,",
       "C'est une escale salutaire,",
       "Parfois taxée de paradis,",
@@ -2197,7 +2197,7 @@
   },
   {
     "id": "7cfc917e-2888-4cc7-a470-3c481aa9dc00",
-    "question": [
+    "content": [
       "Très souvent policière,",
       "C'est un jeu de l'esprit.",
       "Tel le mystère de la vie,",
@@ -2209,7 +2209,7 @@
   },
   {
     "id": "009184fd-ed42-4809-ba5e-75babe7b8a2b",
-    "question": [
+    "content": [
       "Trajectoire parfois calculée,",
       "Elle sert notamment pour les fusées.",
       "Cette cavité est, par l'œil,",
@@ -2221,7 +2221,7 @@
   },
   {
     "id": "7ca00227-1f3c-414d-a90b-1919ac5ab886",
-    "question": [
+    "content": [
       "C’est un rien qui nous étreint,",
       "Un massage sans entrain,",
       "Sur la toile il n'est pas peint,",
@@ -2233,7 +2233,7 @@
   },
   {
     "id": "72d97eac-1b56-4084-9a05-a4016e73a7e1",
-    "question": [
+    "content": [
       "Il aime qu'avec lui on s'accorde.",
       "Et c'est souvent qu'on l'aborde.",
       "Il arrive qu'on s'en éloigne,",
@@ -2245,7 +2245,7 @@
   },
   {
     "id": "ac1c8f58-b969-4cdf-add3-330e831d3830",
-    "question": [
+    "content": [
       "A l'école on y répond présent,",
       "Son prix défie tout concurrent.",
       "Il sert à contester le jugement.",
@@ -2257,7 +2257,7 @@
   },
   {
     "id": "68a80511-e1f3-49af-ac77-c778016ffc77",
-    "question": [
+    "content": [
       "Modeste employé de bureau,",
       "Notant jadis sur ses tablettes,",
       "Pouvant porter une palette,",
@@ -2269,7 +2269,7 @@
   },
   {
     "id": "ab5658a2-b36f-491a-b06f-5929fd47bf35",
-    "question": [
+    "content": [
       "Sans elle tout est léger,",
       "Et on peut l'exprimer",
       "Mais du centre à l'idée,",
@@ -2281,7 +2281,7 @@
   },
   {
     "id": "b7f07518-8bad-4484-b735-635111e5bfa8",
-    "question": [
+    "content": [
       "Capable de marcher sur la tête,",
       "Avec ses œufs on ne fait pas d'omelette.",
       "Souvent très laid, toujours avec fierté,",
@@ -2293,7 +2293,7 @@
   },
   {
     "id": "6e292ac1-77ad-4c71-aaad-3ef43ca5149c",
-    "question": [
+    "content": [
       "En équilibre sur sa pointe fine,",
       "C'est une chose enfantine.",
       "Fort utile pour le maçon,",
@@ -2305,7 +2305,7 @@
   },
   {
     "id": "e7a94e25-8032-4527-8a1d-436e610f0516",
-    "question": [
+    "content": [
       "En cuisine c'est là qu'on le trouve.",
       "D'un chapeau, on le recouvre.",
       "Chacun possède le sien.",
@@ -2317,7 +2317,7 @@
   },
   {
     "id": "8d0e2780-d708-47ae-9804-f1f9650b3dae",
-    "question": [
+    "content": [
       "Cette petite bête qui se multiplie,",
       "Aime bien sortir la nuit.",
       "Tout d'un coup et sans avis,",
@@ -2329,7 +2329,7 @@
   },
   {
     "id": "81593bff-2d46-4c00-8e29-7fe2165d0097",
-    "question": [
+    "content": [
       "Étoffe de laine ou de coton,",
       "C'est aussi une bande sur l'horizon,",
       "Elle peut stopper votre auto,",
@@ -2341,7 +2341,7 @@
   },
   {
     "id": "a96f97c0-6bc9-4340-a1b3-ecfe18bed6e9",
-    "question": [
+    "content": [
       "Echelon suprême à l'opéra,",
       "Jamais sous l'eau elle ne fila",
       "Bonne lorsqu'on y croit,",
@@ -2353,7 +2353,7 @@
   },
   {
     "id": "19ba0802-ed78-46bc-964f-b4e8a622a05d",
-    "question": [
+    "content": [
       "Elle a des plaques, assez souvent,",
       "Elle est chaussée partiellement.",
       "Elle peut aussi avoir des coins,",
@@ -2365,7 +2365,7 @@
   },
   {
     "id": "c79d168d-e769-4b52-b906-75d87dd1dd4f",
-    "question": [
+    "content": [
       "C'est un repas peu ragoûtant,",
       "On peut la faire en paressant.",
       "Comparée à l'embryon,",
@@ -2377,7 +2377,7 @@
   },
   {
     "id": "3a4a08c6-60cd-4d73-9778-ae6660689088",
-    "question": [
+    "content": [
       "Sa chevelure n'est pas brossée,",
       "Son noyau ne peut germer.",
       "Ponctuellement on l'aperçoit,",
@@ -2389,7 +2389,7 @@
   },
   {
     "id": "301d39f2-63a6-4a1d-bf33-06e156fe4177",
-    "question": [
+    "content": [
       "Cet artifice part en fumée,",
       "Au skieur est décernée.",
       "Longue traînée sur la toile,",
@@ -2401,7 +2401,7 @@
   },
   {
     "id": "23bd05c9-6831-4154-901e-beb93610c747",
-    "question": [
+    "content": [
       "Bien des vêtements y défilent,",
       "Elle est propice aux coups de fil.",
       "Parfois conçue pour piloter,",
@@ -2413,7 +2413,7 @@
   },
   {
     "id": "5ca29eaf-5195-4f9e-88e4-f67690a861ae",
-    "question": [
+    "content": [
       "Il est libre quelquefois,",
       "Mais bien las pour un emploi.",
       "En l'attente d'un meilleur score,",
@@ -2425,7 +2425,7 @@
   },
   {
     "id": "8138aa68-a7cb-4325-8c97-cd265bbad5da",
-    "question": [
+    "content": [
       "Elle ne cesse de tourner,",
       "Et ne sait pas décider.",
       "Au gré su souffle du vent,",
@@ -2437,7 +2437,7 @@
   },
   {
     "id": "c95ad29f-3325-41d9-83b5-8f21d07aa1a4",
-    "question": [
+    "content": [
       "Ce garde du corps,",
       "Contient bien des trésors.",
       "Erigé en sa crypte,",
@@ -2449,7 +2449,7 @@
   },
   {
     "id": "cd6403ef-c1be-44bb-9cad-cb1f339f22a2",
-    "question": [
+    "content": [
       "C'est une œuvre majeure,",
       "Chère à l'explorateur.",
       "Son appel répété,",
@@ -2461,7 +2461,7 @@
   },
   {
     "id": "319fb8e9-fd69-49c0-95da-57c7dd7850c9",
-    "question": [
+    "content": [
       "Sujette à l'emballement,",
       "Elle vit en bande assurément.",
       "Cette personne très protégée,",
@@ -2473,7 +2473,7 @@
   },
   {
     "id": "9125ff39-cef9-4720-abfb-4f1248f8e8cf",
-    "question": [
+    "content": [
       "Elle assure la communication,",
       "Et le voyage jusqu'à destination.",
       "Entre deux notes elle fait le lien,",
@@ -2485,7 +2485,7 @@
   },
   {
     "id": "1cd23cae-e8d6-4aea-b3b8-765b38e44dc0",
-    "question": [
+    "content": [
       "D'un cartouche, son nom est cerclé,",
       "D'une couronne il est coiffé.",
       "Des pyramides il est au cœur,",
@@ -2497,7 +2497,7 @@
   },
   {
     "id": "a1cd8b43-e323-4ca3-aa8f-42bcaa81e98b",
-    "question": [
+    "content": [
       "Malgré son caractère,",
       "Elle protège ses congénères,",
       "Elle assure la passagère,",
@@ -2509,7 +2509,7 @@
   },
   {
     "id": "48cf82fa-a807-40dc-aeb0-99de5930131a",
-    "question": [
+    "content": [
       "Sans elle point d'impression,",
       "Elle nourrit les canons.",
       "Vous ne devez brûler,",
@@ -2521,7 +2521,7 @@
   },
   {
     "id": "88cb1936-6eb2-4fa1-bd86-64f0ef3a7c0c",
-    "question": [
+    "content": [
       "Des douze passant l'année,",
       "C'est le plus belliqueux,",
       "Des champs lui furent consacrés,",
@@ -2533,7 +2533,7 @@
   },
   {
     "id": "3203315b-489d-4c07-a29a-d11eef2be324",
-    "question": [
+    "content": [
       "C'est une clé unique,",
       "Doublé, son tour est magique,",
       "Droit il peut faire des jaloux,",
@@ -2545,7 +2545,7 @@
   },
   {
     "id": "22d69df9-5340-47c2-b0ea-8f2b2298d5be",
-    "question": [
+    "content": [
       "Elle peut être bricoleuse,",
       "De bien des voûtes elle est porteuse.",
       "Elle au début des portées,",
@@ -2557,7 +2557,7 @@
   },
   {
     "id": "7acceff5-d3fe-4d81-9039-972206b0fe96",
-    "question": [
+    "content": [
       "Séance pour délibérer,",
       "Bien le suivre est avisé.",
       "C'est un lieu d'affrontements",
@@ -2569,7 +2569,7 @@
   },
   {
     "id": "cafff83e-9499-4adf-9e6e-25fafadcc141",
-    "question": [
+    "content": [
       "A demi ou bien bas,",
       "Le dernier, il aura.",
       "Du code ici il dépend,",
@@ -2581,7 +2581,7 @@
   },
   {
     "id": "b52c7575-fc38-4cfe-9042-1e64f3e00b89",
-    "question": [
+    "content": [
       "Qu'il soit présage ou argument,",
       "C'est un signe important.",
       "De la police il est l'allié,",
@@ -2593,7 +2593,7 @@
   },
   {
     "id": "f68f042c-242c-4c25-bce1-6bd1dda0e1b6",
-    "question": [
+    "content": [
       "Son temps est compté quelquefois,",
       "Chacun peut invoquer son droit,",
       "Par son absence, elle fait douter,",
@@ -2605,7 +2605,7 @@
   },
   {
     "id": "b8c2b023-3410-465c-a897-014856100a04",
-    "question": [
+    "content": [
       "On peut en compter deux dans l'heure,",
       "Mais aussi deux dans la journée.",
       "On en voit deux dans la semaine,",
@@ -2617,7 +2617,7 @@
   },
   {
     "id": "02a056ab-0423-451e-9044-3c12be9362fb",
-    "question": [
+    "content": [
       "Ce signe de caractère,",
       "Peut-être noir ou jaune clair.",
       "Il habite les déserts,",
@@ -2629,7 +2629,7 @@
   },
   {
     "id": "c4543c18-a87d-4776-9507-774f86b481a8",
-    "question": [
+    "content": [
       "Plus j'ai de gardiens,",
       "Moins je suis gardé.",
       "Moins j'ai de gardiens,",
@@ -2641,7 +2641,7 @@
   },
   {
     "id": "75f18e5a-eeda-4e71-994e-ddb7bea054b2",
-    "question": [
+    "content": [
       "Placées contre les yeux,",
       "Elles permettent le rapprochement.",
       "Si toujours elles sont deux,",
@@ -2653,7 +2653,7 @@
   },
   {
     "id": "47da85fe-8dce-4ec6-b7bc-895cbd588c86",
-    "question": [
+    "content": [
       "C'est un secret qu'on enterre,",
       "Mais c'est aussi un bon dessert.",
       "a nature en est baignée,",
@@ -2665,7 +2665,7 @@
   },
   {
     "id": "0cc722f3-dd7c-4ed5-998d-7958bb252741",
-    "question": [
+    "content": [
       "Elle rentre toujours la première,",
       "Et sort toujours la dernière.",
       "Qui est-elle ?"
@@ -2675,7 +2675,7 @@
   },
   {
     "id": "7bbf6d47-5ad1-43fd-b708-a76e114e1d66",
-    "question": [
+    "content": [
       "Aux cartes c'est un coup gagnant,",
       "Le faux disparaît en repassant,",
       "Au risque de paraître irrespectueux,",
@@ -2687,7 +2687,7 @@
   },
   {
     "id": "29381c2b-2f3b-4ebf-aada-71b6b0763491",
-    "question": [
+    "content": [
       "En route, souvent suivi,",
       "Il peut fournir de l'énergie,",
       "Un panier y est fixé,",
@@ -2699,7 +2699,7 @@
   },
   {
     "id": "22d9634c-2006-4ba2-a44c-8d13f9ec867e",
-    "question": [
+    "content": [
       "On peut douter ou bien y croire.",
       "Mais ceux qui veulent savoir,",
       "De quoi demain sera fait,",
@@ -2711,7 +2711,7 @@
   },
   {
     "id": "a2c5c9b1-a494-434a-992a-c1dcf0bd441a",
-    "question": [
+    "content": [
       "Cet ouvrage rigoureux",
       "Ne met jamais \"charrue\"",
       "avant les \"bœufs\".",
@@ -2722,7 +2722,7 @@
   },
   {
     "id": "ada833d3-33a1-4e93-93f7-d2d0fb169112",
-    "question": [
+    "content": [
       "C'est un avare au familier,",
       "Vivant sous nos pieds par milliers.",
       "Des bibliothèques il est roi,",
@@ -2734,7 +2734,7 @@
   },
   {
     "id": "8ff782ab-3c95-4c8f-b164-2d0ce45dd674",
-    "question": [
+    "content": [
       "Je commence la nuit, je finis le matin.",
       "Je suis dans l'étang,",
       "Je suis dans le jardin.",
@@ -2746,7 +2746,7 @@
   },
   {
     "id": "76c235b8-40f8-46e4-bd6d-64c0fbe2f7d6",
-    "question": [
+    "content": [
       "En lancer à tout propos,",
       "N'est pas du meilleur goût.",
       "Mais quand il s'agit d'eau,",
@@ -2758,7 +2758,7 @@
   },
   {
     "id": "45f94108-047e-4bf0-8b4b-46ccec035ed1",
-    "question": [
+    "content": [
       "Le père de Blanche à trois enfants.",
       "Athos, Porthos, et ?..."
     ],
@@ -2767,7 +2767,7 @@
   },
   {
     "id": "473b0930-c978-4780-b413-8565ec201743",
-    "question": [
+    "content": [
       "Alpin ou bien nordique,",
       "C'est un outil téléphonique.",
       "Qui est-il ?"
@@ -2777,7 +2777,7 @@
   },
   {
     "id": "d36110b5-d26a-4a9c-99b9-35d6e0eb7448",
-    "question": [
+    "content": [
       "C'est parfois une transaction,",
       "Ou juste une conversation.",
       "Qui est-il ?"
@@ -2787,7 +2787,7 @@
   },
   {
     "id": "2f9f1bde-baff-45c6-82c8-f160f536b8c9",
-    "question": [
+    "content": [
       "Son étoile ne brille pas,",
       "Son cheval ne galope pas,",
       "Son araignée ne pique pas,",
@@ -2799,7 +2799,7 @@
   },
   {
     "id": "3b3369f2-af3c-4612-b87f-5ef125f03621",
-    "question": [
+    "content": [
       "Elles sont d'un pays",
       "Rimant avec magie,",
       "Beignets sucrés de fête,",
@@ -2811,7 +2811,7 @@
   },
   {
     "id": "553e97a9-6ab8-4736-ab0f-39750bf63165",
-    "question": [
+    "content": [
       "Dans de beaux draps il est parfois,",
       "Son train peut provoquer l'effroi.",
       "Ne manquant jamais d'esprit,",
@@ -2823,7 +2823,7 @@
   },
   {
     "id": "c0e4738e-8630-45df-b556-f84ac2796819",
-    "question": [
+    "content": [
       "Il nous amuse, nous divertit",
       "Et peut valoir moins qu'une bougie,",
       "S'il faut parfois le calmer,",
@@ -2835,7 +2835,7 @@
   },
   {
     "id": "57b8c391-ad5a-4f27-b357-72e185ebb783",
-    "question": [
+    "content": [
       "Il est assez souvent tendu,",
       "Et on l'évite quand on l'a vu.",
       "Des alouettes, le miroir,",
@@ -2847,7 +2847,7 @@
   },
   {
     "id": "c1ec5683-42d8-4825-b736-1e8a5d5e4f06",
-    "question": [
+    "content": [
       "Qu'il soit quart ou bien demi,",
       "C'est un silence qu'il traduit.",
       "Tant qu'il n'est pas le dernier,",
@@ -2859,7 +2859,7 @@
   },
   {
     "id": "c1137e1f-2eff-4b2b-9b97-4b94d69180b9",
-    "question": [
+    "content": [
       "Plutôt jolie, bien maquillée,",
       "Elle orne aussi le doigt blessé,",
       "Qu'elle soit de cire ou bien de son,",
@@ -2871,7 +2871,7 @@
   },
   {
     "id": "8e6cef62-ea2d-4fbc-ac3e-665722641616",
-    "question": [
+    "content": [
       "Comme les rides sur l'eau,",
       "D'un choc, elles descendent à zéro.",
       "Du sol à la radio,",
@@ -2883,7 +2883,7 @@
   },
   {
     "id": "d69f4fdc-59ca-4ffa-929c-3af0453d060a",
-    "question": [
+    "content": [
       "C'est un civil à respecter.",
       "Souvent gardien de nos entrées.",
       "Sur la route, il est suivi.",
@@ -2895,7 +2895,7 @@
   },
   {
     "id": "d9ae55ff-d04e-4e19-a09a-b968af45acd0",
-    "question": [
+    "content": [
       "Petite plante violacée,",
       "Elle nous obsède sans arrêt.",
       "Donne des réponses ou des idées,",
@@ -2907,7 +2907,7 @@
   },
   {
     "id": "34695925-54dc-4688-9e3c-b852dad97c17",
-    "question": [
+    "content": [
       "C'est le refuge des pensifs,",
       "Des plus ambitieux, l'objectif !",
       "Dans ses mers il n'y a point d'eau,",

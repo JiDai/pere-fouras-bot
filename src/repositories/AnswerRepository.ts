@@ -1,23 +1,4 @@
-import type {definitions} from '../types/supabase.ts';
-
 import {SupabaseClient} from "https://deno.land/x/supabase/mod.ts";
-
-import riddles from "../data/riddles.json" assert {type: "json"};
-
-type BaseAnswerEntity = definitions['pf_answer'];
-type RiddleEntity = {
-	"id": string,
-	"question": Array<string>,
-	"show": string,
-	"answer": string
-}
-
-export interface AnswerEntity extends BaseAnswerEntity {
-	question_id: string;
-	username: string;
-	answer: string;
-	valie: boolean;
-}
 
 export default class AnswerRepository {
 	readonly dbClient: SupabaseClient;
@@ -26,27 +7,27 @@ export default class AnswerRepository {
 		this.dbClient = dbClient;
 	}
 
-	getCurrent(): Promise<RiddleEntity> {
-		const index = Math.floor(Math.random() * riddles.length);
-		return Promise.resolve(riddles[index]);
-	}
-
-	async post(answer: string, username: string, valid: boolean, questionId: string): Promise<boolean> {
-		const {data, error} = await this.dbClient.from('pf_answer')
+	async post(answer: string, username: string, valid: boolean, riddleId: string): Promise<boolean> {
+		const {error} = await this.dbClient.from('pf_answer')
 			.insert({
-				question_id: questionId,
+				riddle_id: riddleId,
 				answer,
 				username,
 				valid
 			});
-		return !(error || data.length === 0);
+
+		if (error) {
+			console.error(error);
+			return false;
+		}
+
+		return true;
 	}
 
 	async getBoard(): Promise<Record<string, number>> {
 		const {data, error} = await this.dbClient.from('pf_answer')
 			.select('*')
-			.eq('valid', true)
-			.limit(5);
+			.eq('valid', true);
 
 		if (error || !data) {
 			console.error('Cannot get board');
